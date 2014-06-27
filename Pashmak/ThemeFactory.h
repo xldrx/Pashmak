@@ -8,6 +8,6 @@ public:
 	ThemeFactory();
 	~ThemeFactory();
 
-	Theme LoadTheme(Themes theme);
+	std::shared_ptr<Theme> LoadTheme(Themes theme);
 };
 

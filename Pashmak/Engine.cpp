@@ -14,11 +14,12 @@ std::shared_ptr<Media> Engine::CreateZoe(const std::vector<std::shared_ptr<Media
 	ThemeFactory myThemeFactory;
 	auto myTheme = myThemeFactory.LoadTheme(theme);
 	
-	auto output = std::make_shared<Media>();
-	for (int cutId = 0; cutId < myTheme.GetNumberOfCuts(); cutId++)
+	auto zoe = std::make_shared<Media>();
+	for (int cutId = 0; cutId < myTheme->GetNumberOfCuts(); cutId++)
 	{
-		output->Append(myTheme.GenerateRandomCut(medias));
+		zoe->Append(myTheme->GenerateRandomCut(medias));
 	}
 
-	return output;
+	auto filter = myTheme->GetFilter();
+	return filter->Apply(zoe);
 }
