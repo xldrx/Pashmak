@@ -6,7 +6,7 @@ class Media
 {
 public:
 	Media();
-	~Media();
+	virtual ~Media();
 
 	void Append(const std::shared_ptr<Media> media);
 };

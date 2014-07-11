@@ -2,6 +2,7 @@
 
 enum Themes
 {
+	Classic,
 	Romance,
 	Action,
 	Party,

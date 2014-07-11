@@ -8,7 +8,7 @@ Media::~Media()
 {
 }
 
-void Append(const std::shared_ptr<Media> media)
+void Media::Append(const std::shared_ptr<Media> media)
 {
 
 }
