@@ -1,15 +1,12 @@
 #pragma once
 #include "PictureFilter.h"
 
-class SepiaFilter final :
+class PosterizationFilter final :
 	public PictureFilter
 {
-private:
-	cv::Mat SepiaKernel;
-
 public:
-	SepiaFilter();
-	~SepiaFilter();
+	PosterizationFilter();
+	~PosterizationFilter();
 
 private:
 	std::shared_ptr<Picture> ApplyImpl(const std::shared_ptr<Picture>& pic) override;

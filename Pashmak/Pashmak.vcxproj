@@ -92,6 +92,7 @@
     <ClCompile Include="OldieTheme.cpp" />
     <ClCompile Include="Picture.cpp" />
     <ClCompile Include="PictureFilter.cpp" />
+    <ClCompile Include="PosterizationFilter.cpp" />
     <ClCompile Include="SepiaFilter.cpp" />
     <ClCompile Include="Theme.cpp" />
     <ClCompile Include="ThemeFactory.cpp" />
@@ -110,6 +111,7 @@
     <ClInclude Include="OldieTheme.h" />
     <ClInclude Include="Picture.h" />
     <ClInclude Include="PictureFilter.h" />
+    <ClInclude Include="PosterizationFilter.h" />
     <ClInclude Include="SepiaFilter.h" />
     <ClInclude Include="Theme.h" />
     <ClInclude Include="ThemeFactory.h" />
