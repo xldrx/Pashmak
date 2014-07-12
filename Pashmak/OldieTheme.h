@@ -1,11 +1,12 @@
 #pragma once
 #include "Theme.h"
-class ClassicTheme final :
+
+class OldieTheme final :
 	public Theme
 {
 public:
-	ClassicTheme();
-	~ClassicTheme();
+	OldieTheme();
+	~OldieTheme();
 
 	unsigned int GetNumberOfCuts() override;
 	std::shared_ptr<Media> GenerateRandomCut(const std::vector<std::shared_ptr<Media>>& medias) override;

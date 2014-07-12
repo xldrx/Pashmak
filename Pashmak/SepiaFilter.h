@@ -1,16 +1,15 @@
 #pragma once
 #include "PictureFilter.h"
 
-class GaussianNoiseFilter final :
+class SepiaFilter :
 	public PictureFilter
 {
-private: 
-	int Mean;
-	int StdDev;
+private:
+	cv::Mat SepiaKernel;
 
 public:
-	GaussianNoiseFilter(int mean, int stddev);
-	~GaussianNoiseFilter();
+	SepiaFilter();
+	~SepiaFilter();
 
 private:
 	std::shared_ptr<Picture> ApplyImpl(const std::shared_ptr<Picture>& pic) override;

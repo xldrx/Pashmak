@@ -1,5 +1,5 @@
 #include "ThemeFactory.h"
-#include "ClassicTheme.h"
+#include "OldieTheme.h"
 
 ThemeFactory::ThemeFactory()
 {
@@ -13,16 +13,11 @@ std::shared_ptr<Theme> ThemeFactory::LoadTheme(Themes theme)
 {
 	switch (theme)
 	{
-	case Classic:
-	case Romance:
-	case Action:
-	case Party:
-	case Mood:
-	case Workout:
-	case Chill:
-	case Travel:
+	case Oldie:
+		return std::make_shared<OldieTheme>();
+	
 	default:
-		return std::make_shared<ClassicTheme>();
+		throw std::exception("Unkown theme");
 		break;
 	}
 }

@@ -39,9 +39,6 @@
     <ClCompile Include="Picture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ClassicTheme.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GaussianNoiseFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -52,6 +49,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AggregatedFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GrayscaleFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SepiaFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OldieTheme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GaussianWindowFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -80,9 +89,6 @@
     <ClInclude Include="Picture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ClassicTheme.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="GaussianNoiseFilter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -93,6 +99,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AggregatedFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GrayscaleFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SepiaFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OldieTheme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GaussianWindowFilter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

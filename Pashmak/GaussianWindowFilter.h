@@ -1,16 +1,12 @@
 #pragma once
 #include "PictureFilter.h"
 
-class GaussianNoiseFilter final :
+class GaussianWindowFilter final :
 	public PictureFilter
 {
-private: 
-	int Mean;
-	int StdDev;
-
 public:
-	GaussianNoiseFilter(int mean, int stddev);
-	~GaussianNoiseFilter();
+	GaussianWindowFilter();
+	~GaussianWindowFilter();
 
 private:
 	std::shared_ptr<Picture> ApplyImpl(const std::shared_ptr<Picture>& pic) override;

@@ -21,7 +21,7 @@ int main(int argc, char* argv[])
 	Engine myEngine;
 
 	auto media = myFileManager.LoadFolder(std::string(argv[1]));
-	auto output = myEngine.CreateZoe(media, Themes::Action);
+	auto output = myEngine.CreateZoe(media, Themes::Oldie);
 	myFileManager.SaveFile(output, std::string(argv[2]));
 
 	return 0;
