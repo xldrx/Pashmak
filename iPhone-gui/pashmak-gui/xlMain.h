@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface xlMain : UIViewController
+@interface xlMain : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
+@property (weak, nonatomic) IBOutlet UIImageView *preview;
 
 
 @end

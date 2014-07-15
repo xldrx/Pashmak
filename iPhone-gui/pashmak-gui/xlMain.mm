@@ -24,17 +24,60 @@
 @implementation xlMain
 
 - (IBAction)click:(id)sender {
+    [self imaging:UIImagePickerControllerSourceTypePhotoLibrary];
+}
+- (IBAction)take_image:(id)sender {
+    [self imaging:UIImagePickerControllerSourceTypeCamera];
+}
+
+- (void) imaging: (UIImagePickerControllerSourceType) source {
+    if (![UIImagePickerController isSourceTypeAvailable:source]){
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You don't have any pictures (or camera)"
+                                                        message:@"Save some pictures."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+        return;
+    }
+    
+    UIImagePickerController *pickerLibrary = [[UIImagePickerController alloc] init];
+    pickerLibrary.sourceType = source;
+    pickerLibrary.delegate = self;
+    
+    [self presentViewController:pickerLibrary animated:YES completion:nil];
+
+}
+
+- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
+{
+
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    NSString *path = [NSTemporaryDirectory() stringByAppendingPathComponent:@"image.jpg"];
+    NSData *imageData = UIImageJPEGRepresentation(image, 1);
+    [imageData writeToFile:path atomically:YES];
+    
     FileManager myFileManager;
 	Engine myEngine;
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Lenna" ofType:@"png"];
     auto cpath = {(std::string)[path UTF8String]};
     
 	auto media = myFileManager.LoadFiles(cpath);
 	auto output = myEngine.CreateZoe(media, Themes::Oldie);
-	myFileManager.SaveFile(output, "./test.png");
+    NSString* savePath = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], @"output.jpg"];
+	myFileManager.SaveFile(output, [savePath UTF8String]);
+    
+    UIImage* imageToBeSaved = [UIImage imageWithContentsOfFile:savePath];
+    UIImageWriteToSavedPhotosAlbum(imageToBeSaved, nil, nil, nil);
+    
+    [self.preview setImage:imageToBeSaved];
+    [self.preview setContentMode:UIViewContentModeScaleAspectFill];
 
+    
+    
 }
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

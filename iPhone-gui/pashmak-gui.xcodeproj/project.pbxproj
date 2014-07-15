@@ -29,7 +29,6 @@
 		7619A3B01974EAE1006429AF /* GaussianNoiseFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3891974EAE1006429AF /* GaussianNoiseFilter.cpp */; };
 		7619A3B11974EAE1006429AF /* GaussianWindowFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A38B1974EAE1006429AF /* GaussianWindowFilter.cpp */; };
 		7619A3B21974EAE1006429AF /* GrayscaleFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A38D1974EAE1006429AF /* GrayscaleFilter.cpp */; };
-		7619A3B31974EAE1006429AF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A38F1974EAE1006429AF /* main.cpp */; };
 		7619A3B41974EAE1006429AF /* Media.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3901974EAE1006429AF /* Media.cpp */; };
 		7619A3B51974EAE1006429AF /* MediaManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3921974EAE1006429AF /* MediaManager.cpp */; };
 		7619A3B61974EAE1006429AF /* OldieFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3941974EAE1006429AF /* OldieFilter.cpp */; };
@@ -47,6 +46,7 @@
 		7619A3C21974EAE1006429AF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7619A3A91974EAE1006429AF /* README.md */; };
 		7619A3C51974F02C006429AF /* xlMain.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3C41974F02C006429AF /* xlMain.mm */; };
 		7619A3C71974F84F006429AF /* Lenna.png in Resources */ = {isa = PBXBuildFile; fileRef = 7619A3C61974F84F006429AF /* Lenna.png */; };
+		7619A3C91974FDD4006429AF /* Lenna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7619A3C81974FDD4006429AF /* Lenna.jpg */; };
 		E475838FFC434E7FB33C800B /* libPods-pashmak-gui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EFD27D7DE44B95A6D6EA60 /* libPods-pashmak-gui.a */; };
 /* End PBXBuildFile section */
 
@@ -127,6 +127,7 @@
 		7619A3C31974F02C006429AF /* xlMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlMain.h; sourceTree = "<group>"; };
 		7619A3C41974F02C006429AF /* xlMain.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = xlMain.mm; sourceTree = "<group>"; };
 		7619A3C61974F84F006429AF /* Lenna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lenna.png; sourceTree = "<group>"; };
+		7619A3C81974FDD4006429AF /* Lenna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lenna.jpg; sourceTree = "<group>"; };
 		A5EFD27D7DE44B95A6D6EA60 /* libPods-pashmak-gui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pashmak-gui.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -158,6 +159,7 @@
 		7619A3351974E992006429AF = {
 			isa = PBXGroup;
 			children = (
+				7619A3C81974FDD4006429AF /* Lenna.jpg */,
 				7619A3C61974F84F006429AF /* Lenna.png */,
 				7619A37B1974EAE1006429AF /* core */,
 				7619A3471974E993006429AF /* pashmak-gui */,
@@ -387,6 +389,7 @@
 				7619A3C11974EAE1006429AF /* Pashmak.sln in Resources */,
 				7619A34C1974E993006429AF /* InfoPlist.strings in Resources */,
 				7619A3B91974EAE1006429AF /* Pashmak.vcxproj.filters in Resources */,
+				7619A3C91974FDD4006429AF /* Lenna.jpg in Resources */,
 				7619A3C21974EAE1006429AF /* README.md in Resources */,
 				7619A3AB1974EAE1006429AF /* output.jpg in Resources */,
 				7619A3551974E993006429AF /* Main.storyboard in Resources */,
@@ -443,7 +446,6 @@
 			files = (
 				7619A3521974E993006429AF /* xlAppDelegate.m in Sources */,
 				7619A3AF1974EAE1006429AF /* Filter.cpp in Sources */,
-				7619A3B31974EAE1006429AF /* main.cpp in Sources */,
 				7619A3B11974EAE1006429AF /* GaussianWindowFilter.cpp in Sources */,
 				7619A3B61974EAE1006429AF /* OldieFilter.cpp in Sources */,
 				7619A3B01974EAE1006429AF /* GaussianNoiseFilter.cpp in Sources */,
