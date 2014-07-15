@@ -9,7 +9,7 @@ void PrintUsage()
 	std::cout << "app.exe inputfolder outputfile" << std::endl;
 }
 
-int main(int argc, char* argv[])
+int mainx(int argc, char* argv[])
 {
 	if (argc != 3)
 	{
