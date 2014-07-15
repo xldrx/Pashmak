@@ -14,15 +14,12 @@
 		7619A34E1974E993006429AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7619A34D1974E993006429AF /* main.m */; };
 		7619A3521974E993006429AF /* xlAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3511974E993006429AF /* xlAppDelegate.m */; };
 		7619A3551974E993006429AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7619A3531974E993006429AF /* Main.storyboard */; };
-		7619A3581974E993006429AF /* xlMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3571974E993006429AF /* xlMasterViewController.m */; };
-		7619A35B1974E993006429AF /* xlDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7619A35A1974E993006429AF /* xlDetailViewController.m */; };
 		7619A35D1974E993006429AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7619A35C1974E993006429AF /* Images.xcassets */; };
 		7619A3641974E994006429AF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7619A3631974E994006429AF /* XCTest.framework */; };
 		7619A3651974E994006429AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7619A3411974E993006429AF /* Foundation.framework */; };
 		7619A3661974E994006429AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7619A3451974E993006429AF /* UIKit.framework */; };
 		7619A36E1974E994006429AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7619A36C1974E994006429AF /* InfoPlist.strings */; };
 		7619A3701974E994006429AF /* pashmak_guiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7619A36F1974E994006429AF /* pashmak_guiTests.m */; };
-		7619A37A1974EAC7006429AF /* libPods-pashmak-gui-OpenCV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7619A3791974EAC7006429AF /* libPods-pashmak-gui-OpenCV.a */; };
 		7619A3AA1974EAE1006429AF /* milad-ghaznavi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7619A37D1974EAE1006429AF /* milad-ghaznavi.jpg */; };
 		7619A3AB1974EAE1006429AF /* output.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7619A37E1974EAE1006429AF /* output.jpg */; };
 		7619A3AC1974EAE1006429AF /* AggregatedFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3801974EAE1006429AF /* AggregatedFilter.cpp */; };
@@ -48,6 +45,7 @@
 		7619A3C01974EAE1006429AF /* ThemeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3A61974EAE1006429AF /* ThemeManager.cpp */; };
 		7619A3C11974EAE1006429AF /* Pashmak.sln in Resources */ = {isa = PBXBuildFile; fileRef = 7619A3A81974EAE1006429AF /* Pashmak.sln */; };
 		7619A3C21974EAE1006429AF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7619A3A91974EAE1006429AF /* README.md */; };
+		7619A3C51974F02C006429AF /* xlMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3C41974F02C006429AF /* xlMain.m */; };
 		E475838FFC434E7FB33C800B /* libPods-pashmak-gui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EFD27D7DE44B95A6D6EA60 /* libPods-pashmak-gui.a */; };
 /* End PBXBuildFile section */
 
@@ -74,10 +72,6 @@
 		7619A3501974E993006429AF /* xlAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xlAppDelegate.h; sourceTree = "<group>"; };
 		7619A3511974E993006429AF /* xlAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xlAppDelegate.m; sourceTree = "<group>"; };
 		7619A3541974E993006429AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7619A3561974E993006429AF /* xlMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xlMasterViewController.h; sourceTree = "<group>"; };
-		7619A3571974E993006429AF /* xlMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xlMasterViewController.m; sourceTree = "<group>"; };
-		7619A3591974E993006429AF /* xlDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xlDetailViewController.h; sourceTree = "<group>"; };
-		7619A35A1974E993006429AF /* xlDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xlDetailViewController.m; sourceTree = "<group>"; };
 		7619A35C1974E993006429AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7619A3621974E994006429AF /* pashmak-guiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pashmak-guiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7619A3631974E994006429AF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -129,6 +123,8 @@
 		7619A3A71974EAE1006429AF /* ThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
 		7619A3A81974EAE1006429AF /* Pashmak.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pashmak.sln; sourceTree = "<group>"; };
 		7619A3A91974EAE1006429AF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		7619A3C31974F02C006429AF /* xlMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlMain.h; sourceTree = "<group>"; };
+		7619A3C41974F02C006429AF /* xlMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xlMain.m; sourceTree = "<group>"; };
 		A5EFD27D7DE44B95A6D6EA60 /* libPods-pashmak-gui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pashmak-gui.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,7 +133,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7619A37A1974EAC7006429AF /* libPods-pashmak-gui-OpenCV.a in Frameworks */,
 				7619A3441974E993006429AF /* CoreGraphics.framework in Frameworks */,
 				7619A3461974E993006429AF /* UIKit.framework in Frameworks */,
 				7619A3421974E993006429AF /* Foundation.framework in Frameworks */,
@@ -198,12 +193,10 @@
 				7619A3501974E993006429AF /* xlAppDelegate.h */,
 				7619A3511974E993006429AF /* xlAppDelegate.m */,
 				7619A3531974E993006429AF /* Main.storyboard */,
-				7619A3561974E993006429AF /* xlMasterViewController.h */,
-				7619A3571974E993006429AF /* xlMasterViewController.m */,
-				7619A3591974E993006429AF /* xlDetailViewController.h */,
-				7619A35A1974E993006429AF /* xlDetailViewController.m */,
 				7619A35C1974E993006429AF /* Images.xcassets */,
 				7619A3481974E993006429AF /* Supporting Files */,
+				7619A3C31974F02C006429AF /* xlMain.h */,
+				7619A3C41974F02C006429AF /* xlMain.m */,
 			);
 			path = "pashmak-gui";
 			sourceTree = "<group>";
@@ -451,7 +444,6 @@
 				7619A3B61974EAE1006429AF /* OldieFilter.cpp in Sources */,
 				7619A3B01974EAE1006429AF /* GaussianNoiseFilter.cpp in Sources */,
 				7619A3AD1974EAE1006429AF /* Engine.cpp in Sources */,
-				7619A35B1974E993006429AF /* xlDetailViewController.m in Sources */,
 				7619A3BF1974EAE1006429AF /* ThemeFactory.cpp in Sources */,
 				7619A34E1974E993006429AF /* main.m in Sources */,
 				7619A3BC1974EAE1006429AF /* PosterizationFilter.cpp in Sources */,
@@ -463,9 +455,9 @@
 				7619A3BE1974EAE1006429AF /* Theme.cpp in Sources */,
 				7619A3B51974EAE1006429AF /* MediaManager.cpp in Sources */,
 				7619A3BB1974EAE1006429AF /* PictureFilter.cpp in Sources */,
-				7619A3581974E993006429AF /* xlMasterViewController.m in Sources */,
 				7619A3BA1974EAE1006429AF /* Picture.cpp in Sources */,
 				7619A3C01974EAE1006429AF /* ThemeManager.cpp in Sources */,
+				7619A3C51974F02C006429AF /* xlMain.m in Sources */,
 				7619A3B71974EAE1006429AF /* OldieTheme.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
