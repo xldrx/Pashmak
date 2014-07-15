@@ -45,7 +45,8 @@
 		7619A3C01974EAE1006429AF /* ThemeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3A61974EAE1006429AF /* ThemeManager.cpp */; };
 		7619A3C11974EAE1006429AF /* Pashmak.sln in Resources */ = {isa = PBXBuildFile; fileRef = 7619A3A81974EAE1006429AF /* Pashmak.sln */; };
 		7619A3C21974EAE1006429AF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7619A3A91974EAE1006429AF /* README.md */; };
-		7619A3C51974F02C006429AF /* xlMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3C41974F02C006429AF /* xlMain.m */; };
+		7619A3C51974F02C006429AF /* xlMain.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3C41974F02C006429AF /* xlMain.mm */; };
+		7619A3C71974F84F006429AF /* Lenna.png in Resources */ = {isa = PBXBuildFile; fileRef = 7619A3C61974F84F006429AF /* Lenna.png */; };
 		E475838FFC434E7FB33C800B /* libPods-pashmak-gui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EFD27D7DE44B95A6D6EA60 /* libPods-pashmak-gui.a */; };
 /* End PBXBuildFile section */
 
@@ -124,7 +125,8 @@
 		7619A3A81974EAE1006429AF /* Pashmak.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pashmak.sln; sourceTree = "<group>"; };
 		7619A3A91974EAE1006429AF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		7619A3C31974F02C006429AF /* xlMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlMain.h; sourceTree = "<group>"; };
-		7619A3C41974F02C006429AF /* xlMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xlMain.m; sourceTree = "<group>"; };
+		7619A3C41974F02C006429AF /* xlMain.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = xlMain.mm; sourceTree = "<group>"; };
+		7619A3C61974F84F006429AF /* Lenna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lenna.png; sourceTree = "<group>"; };
 		A5EFD27D7DE44B95A6D6EA60 /* libPods-pashmak-gui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pashmak-gui.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -156,6 +158,7 @@
 		7619A3351974E992006429AF = {
 			isa = PBXGroup;
 			children = (
+				7619A3C61974F84F006429AF /* Lenna.png */,
 				7619A37B1974EAE1006429AF /* core */,
 				7619A3471974E993006429AF /* pashmak-gui */,
 				7619A3691974E994006429AF /* pashmak-guiTests */,
@@ -196,7 +199,7 @@
 				7619A35C1974E993006429AF /* Images.xcassets */,
 				7619A3481974E993006429AF /* Supporting Files */,
 				7619A3C31974F02C006429AF /* xlMain.h */,
-				7619A3C41974F02C006429AF /* xlMain.m */,
+				7619A3C41974F02C006429AF /* xlMain.mm */,
 			);
 			path = "pashmak-gui";
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7619A3C71974F84F006429AF /* Lenna.png in Resources */,
 				7619A3B81974EAE1006429AF /* Pashmak.vcxproj in Resources */,
 				7619A35D1974E993006429AF /* Images.xcassets in Resources */,
 				7619A3AA1974EAE1006429AF /* milad-ghaznavi.jpg in Resources */,
@@ -457,7 +461,7 @@
 				7619A3BB1974EAE1006429AF /* PictureFilter.cpp in Sources */,
 				7619A3BA1974EAE1006429AF /* Picture.cpp in Sources */,
 				7619A3C01974EAE1006429AF /* ThemeManager.cpp in Sources */,
-				7619A3C51974F02C006429AF /* xlMain.m in Sources */,
+				7619A3C51974F02C006429AF /* xlMain.mm in Sources */,
 				7619A3B71974EAE1006429AF /* OldieTheme.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,6 +588,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pashmak-gui/pashmak-gui-Prefix.pch";
 				INFOPLIST_FILE = "pashmak-gui/pashmak-gui-Info.plist";
@@ -602,6 +607,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pashmak-gui/pashmak-gui-Prefix.pch";
 				INFOPLIST_FILE = "pashmak-gui/pashmak-gui-Info.plist";
