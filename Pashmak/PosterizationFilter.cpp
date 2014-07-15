@@ -13,9 +13,6 @@ std::shared_ptr<Picture> PosterizationFilter::ApplyImpl(const std::shared_ptr<Pi
 {
 	cv::Mat src = pic->Mat();
 	cv::Mat res(src.size(), src.type());
-
-	for (int i = 0; i < 3; i++)
-		cv::threshold(src, res, 125, 255, cv::THRESH_BINARY);
-
+	cv::threshold(src, res, 125, 255, cv::THRESH_BINARY);
 	return std::make_shared<Picture>(res);
 }

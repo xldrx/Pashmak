@@ -122,20 +122,21 @@ FileManager::~FileManager()
 
 std::shared_ptr<Media> FileManager::LoadFile(const std::string& filename) const
 {
-	return IsPicture(filename) ?
-		LoadPicture(filename) :
-		std::make_shared<Media>();
+	return IsPicture(filename) ? LoadPicture(filename) : std::make_shared<Media>();
+}
+
+std::vector<std::shared_ptr<Media>> FileManager::LoadFiles(const std::vector<std::string>& filenames) const
+{
+	std::vector<std::shared_ptr<Media>> output;
+	for (const auto& filename : filenames)
+		output.push_back(LoadFile(filename));
+
+	return output;
 }
 
 std::vector<std::shared_ptr<Media>> FileManager::LoadFolder(const std::string& foldername) const
 {
-	std::vector<std::shared_ptr<Media>> output;
-	for (const auto& filename : GetAllFilesInFolder(foldername))
-	{
-		output.push_back(LoadFile(filename));
-	}
-
-	return output;
+	return LoadFiles(GetAllFilesInFolder(foldername));
 }
 
 void FileManager::SaveFile(const std::shared_ptr<Media>& media, const std::string& filename) const
