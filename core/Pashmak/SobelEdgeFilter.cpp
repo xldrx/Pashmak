@@ -1,11 +1,3 @@
-//
-//  SobelEdgeFilter.cpp
-//  OpenCV
-//
-//  Created by Mehran on 7/15/14.
-//  Copyright (c) 2014 Mehran. All rights reserved.
-//
-
 #include "SobelEdgeFilter.h"
 
 SobelEdgeFilter::SobelEdgeFilter()

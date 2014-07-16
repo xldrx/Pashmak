@@ -5,6 +5,14 @@
 #include <locale>
 #include <codecvt>
 
+#ifdef WIN32
+
+#include <windows.h>
+#include <tchar.h>
+#include <stdio.h>
+
+#endif
+
 namespace
 {
 	std::wstring s2ws(const std::string& str)
@@ -26,6 +34,31 @@ namespace
 	std::vector<std::wstring> GetAllFilesInFolderWide(const std::wstring& foldername)
 	{
 		std::vector<std::wstring> out;
+
+#ifdef WIN32
+		HANDLE dir;
+		WIN32_FIND_DATA file_data;
+
+		if ((dir = FindFirstFile((foldername + L"/*").c_str(), &file_data)) == INVALID_HANDLE_VALUE)
+			return out; /* No files found */
+
+		do {
+			const std::wstring file_name = file_data.cFileName;
+			const std::wstring full_file_name = foldername + L"/" + file_name;
+			const bool is_directory = (file_data.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) != 0;
+
+			if (file_name[0] == '.')
+				continue;
+
+			if (is_directory)
+				continue;
+
+			out.push_back(full_file_name);
+		} while (FindNextFile(dir, &file_data));
+
+		FindClose(dir);
+#endif
+
 		return out;
 	}
 

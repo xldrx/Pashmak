@@ -1,17 +1,8 @@
-//
-//  SobelEdgeFilter.h
-//  OpenCV
-//
-//  Created by Mehran on 7/15/14.
-//  Copyright (c) 2014 Mehran. All rights reserved.
-//
-
 #pragma once
 #include "PictureFilter.h"
 
-
 class SobelEdgeFilter final :
-public PictureFilter
+	public PictureFilter
 {
 private:
     const int Depth = CV_16S;
