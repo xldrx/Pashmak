@@ -16,6 +16,7 @@ std::shared_ptr<Media> MultiplyFilter::Apply(const std::shared_ptr<Media>& pic)
 	auto b = std::static_pointer_cast<Picture>(myMultiplicand->Apply(pic))->Mat();
 
 	cv::Mat channels[3];
+	a.convertTo(a, CV_64F);
 	cv::split(a, channels);
 	for (int i = 0; i < 3; i++)
 		cv::multiply(channels[i], b, channels[i]);;

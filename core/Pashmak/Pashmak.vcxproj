@@ -90,6 +90,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Media.cpp" />
     <ClCompile Include="MultiplyFilter.cpp" />
+    <ClCompile Include="NoOpFilter.cpp" />
     <ClCompile Include="OldieFilter.cpp" />
     <ClCompile Include="OldieTheme.cpp" />
     <ClCompile Include="Picture.cpp" />
@@ -112,6 +113,7 @@
     <ClInclude Include="GaussianWindowFilter.h" />
     <ClInclude Include="Media.h" />
     <ClInclude Include="MultiplyFilter.h" />
+    <ClInclude Include="NoOpFilter.h" />
     <ClInclude Include="OldieFilter.h" />
     <ClInclude Include="OldieTheme.h" />
     <ClInclude Include="Picture.h" />
