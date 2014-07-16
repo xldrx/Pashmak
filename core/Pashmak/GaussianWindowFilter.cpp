@@ -1,4 +1,5 @@
 #include "GaussianWindowFilter.h"
+#include "NoOpFilter.h"
 #include "MultiplyFilter.h"
 #include <opencv2/core/core_c.h>
 
