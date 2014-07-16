@@ -2,17 +2,16 @@
 #include "PictureFilter.h"
 
 class MultiplyFilter :
-	public PictureFilter
+	public Filter
 {
 private:
-	std::shared_ptr<PictureFilter> myMultiplier;
-	std::shared_ptr<PictureFilter> myMultiplicand;
+	std::shared_ptr<Filter> myMultiplier;
+	std::shared_ptr<Filter> myMultiplicand;
 
 public:
-	MultiplyFilter(const std::shared_ptr<PictureFilter>& multiplier, const std::shared_ptr<PictureFilter>& multiplicand);
+	MultiplyFilter(const std::shared_ptr<Filter>& multiplier, const std::shared_ptr<Filter>& multiplicand);
 	~MultiplyFilter();
 
-private:
-	std::shared_ptr<Picture> ApplyImpl(const std::shared_ptr<Picture>& pic) override;
+	std::shared_ptr<Media> Apply(const std::shared_ptr<Media>& pic) override;
 };
 

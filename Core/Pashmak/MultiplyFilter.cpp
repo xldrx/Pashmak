@@ -1,6 +1,6 @@
 #include "MultiplyFilter.h"
 
-MultiplyFilter::MultiplyFilter(const std::shared_ptr<PictureFilter>& multiplier, const std::shared_ptr<PictureFilter>& multiplicand)
+MultiplyFilter::MultiplyFilter(const std::shared_ptr<Filter>& multiplier, const std::shared_ptr<Filter>& multiplicand)
 	: myMultiplier(multiplier)
 	, myMultiplicand(multiplicand)
 {
@@ -10,7 +10,7 @@ MultiplyFilter::~MultiplyFilter()
 {
 }
 
-std::shared_ptr<Picture> MultiplyFilter::ApplyImpl(const std::shared_ptr<Picture>& pic)
+std::shared_ptr<Media> MultiplyFilter::Apply(const std::shared_ptr<Media>& pic)
 {
 	auto a = std::static_pointer_cast<Picture>(myMultiplier->Apply(pic))->Mat();
 	auto b = std::static_pointer_cast<Picture>(myMultiplicand->Apply(pic))->Mat();
