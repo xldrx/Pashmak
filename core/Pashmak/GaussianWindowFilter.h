@@ -1,7 +1,5 @@
 #pragma once
 #include "PictureFilter.h"
-#include "NoOpFilter.h"
-#include "MultiplyFilter.h"
 
 class GaussianWindowFilter final :
 	public PictureFilter
