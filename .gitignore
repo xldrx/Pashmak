@@ -176,3 +176,11 @@ $RECYCLE.BIN/
 *.exe
 *.out
 *.app
+
+*.xccheckout
+
+*.xcuserstate
+
+*.xcscheme
+
+*.plist
