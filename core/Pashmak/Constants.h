@@ -2,5 +2,6 @@
 
 enum Themes
 {
-	Oldie
+	Oldie,
+    Cartoon
 };
