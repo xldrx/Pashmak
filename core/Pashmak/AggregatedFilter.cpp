@@ -9,7 +9,7 @@ AggregatedFilter::~AggregatedFilter()
 {
 }
 
-std::shared_ptr<Media> AggregatedFilter::Apply(const std::shared_ptr<Media>& media)
+std::shared_ptr<Picture> AggregatedFilter::ApplyImpl(const std::shared_ptr<Picture>& media)
 {
 	auto out = media;
 	

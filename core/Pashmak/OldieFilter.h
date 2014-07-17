@@ -1,8 +1,8 @@
 #pragma once
-#include "PictureFilter.h"
+#include "Filter.h"
 
 class OldieFilter final :
-	public PictureFilter
+	public Filter
 {
 private:
 	unsigned int LineNumber;
@@ -14,4 +14,3 @@ public:
 private:
 	std::shared_ptr<Picture> ApplyImpl(const std::shared_ptr<Picture>& pic) override;
 };
-

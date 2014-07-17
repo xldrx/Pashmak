@@ -10,10 +10,10 @@ MultiplyFilter::~MultiplyFilter()
 {
 }
 
-std::shared_ptr<Media> MultiplyFilter::Apply(const std::shared_ptr<Media>& pic)
+std::shared_ptr<Picture> MultiplyFilter::ApplyImpl(const std::shared_ptr<Picture>& pic)
 {
-	auto a = std::static_pointer_cast<Picture>(myMultiplier->Apply(pic))->Mat();
-	auto b = std::static_pointer_cast<Picture>(myMultiplicand->Apply(pic))->Mat();
+	auto a = myMultiplier->Apply(pic)->Mat();
+	auto b = myMultiplicand->Apply(pic)->Mat();
 
 	cv::Mat channels[3];
 	a.convertTo(a, CV_64F);

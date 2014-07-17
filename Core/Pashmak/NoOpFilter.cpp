@@ -8,7 +8,7 @@ NoOpFilter::~NoOpFilter()
 {
 }
 
-std::shared_ptr<Media> NoOpFilter::Apply(const std::shared_ptr<Media>& media)
+std::shared_ptr<Picture> NoOpFilter::ApplyImpl(const std::shared_ptr<Picture>& media)
 {
 	return media;
 }

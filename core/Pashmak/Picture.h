@@ -1,6 +1,6 @@
 #pragma once
-#include <opencv2/opencv.hpp>
 #include "Media.h"
+#include <opencv2/opencv.hpp>
 
 class Picture :
 	public Media

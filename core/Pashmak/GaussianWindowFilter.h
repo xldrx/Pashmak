@@ -1,8 +1,8 @@
 #pragma once
-#include "PictureFilter.h"
+#include "Filter.h"
 
 class GaussianWindowFilter final :
-	public PictureFilter
+	public Filter
 {
 public:
 	GaussianWindowFilter();

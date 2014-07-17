@@ -1,8 +1,8 @@
 #pragma once
-#include "PictureFilter.h"
+#include "Filter.h"
 
 class GrayscaleFilter final :
-	public PictureFilter
+	public Filter
 {
 public:
 	GrayscaleFilter();

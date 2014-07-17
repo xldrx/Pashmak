@@ -1,6 +1,6 @@
 #include "FileManager.h"
 #include "Picture.h"
-#include <opencv2/highgui/highgui.hpp>
+#include "VideoFile.h"
 #include <string>
 #include <locale>
 #include <codecvt>
@@ -86,11 +86,6 @@ namespace
 	{
 		return std::make_shared<Picture>(cv::imread(filename));
 	}
-
-	void SavePicture(const std::shared_ptr<Picture>& pic, const std::string& filename)
-	{
-		cv::imwrite(filename, pic->Mat());
-	}
 }
 
 FileManager::FileManager()
@@ -103,7 +98,10 @@ FileManager::~FileManager()
 
 std::shared_ptr<Media> FileManager::LoadFile(const std::string& filename) const
 {
-	return IsPicture(filename) ? LoadPicture(filename) : std::make_shared<Media>();
+	if (IsPicture(filename))
+		return LoadPicture(filename);
+	else
+		return std::make_shared<VideoFile>(filename);
 }
 
 std::vector<std::shared_ptr<Media>> FileManager::LoadFiles(const std::vector<std::string>& filenames) const
@@ -118,13 +116,4 @@ std::vector<std::shared_ptr<Media>> FileManager::LoadFiles(const std::vector<std
 std::vector<std::shared_ptr<Media>> FileManager::LoadFolder(const std::string& foldername) const
 {
 	return LoadFiles(GetAllFilesInFolder(foldername));
-}
-
-void FileManager::SaveFile(const std::shared_ptr<Media>& media, const std::string& filename) const
-{
-	const auto& pic(std::dynamic_pointer_cast<Picture>(media));
-	if (pic)
-		SavePicture(pic, filename);
-
-	return;
 }

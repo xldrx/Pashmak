@@ -12,6 +12,7 @@ public:
 	AggregatedFilter(const std::vector<std::shared_ptr<Filter>>& filters);
 	~AggregatedFilter();
 
-	std::shared_ptr<Media> Apply(const std::shared_ptr<Media>& media) override;
+private:
+	std::shared_ptr<Picture> ApplyImpl(const std::shared_ptr<Picture>& media) override;
 };
 

@@ -1,8 +1,8 @@
 #pragma once
-#include "PictureFilter.h"
+#include "Filter.h"
 
 class SobelEdgeFilter final :
-	public PictureFilter
+	public Filter
 {
 private:
     const int Depth = CV_16S;

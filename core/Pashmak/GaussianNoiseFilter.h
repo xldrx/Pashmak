@@ -1,8 +1,8 @@
 #pragma once
-#include "PictureFilter.h"
+#include "Filter.h"
 
 class GaussianNoiseFilter final :
-	public PictureFilter
+	public Filter
 {
 private: 
 	int Mean;

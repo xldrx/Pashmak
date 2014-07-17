@@ -8,7 +8,7 @@ using namespace cv;
 namespace
 {
 	class GaussianDistFilter
-		: public PictureFilter
+		: public Filter
 	{
 	public:
 		GaussianDistFilter() {}

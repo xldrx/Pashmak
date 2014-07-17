@@ -1,8 +1,8 @@
 #pragma once
-#include "PictureFilter.h"
+#include "Filter.h"
 
 class SepiaFilter final :
-	public PictureFilter
+	public Filter
 {
 private:
 	cv::Mat SepiaKernel;

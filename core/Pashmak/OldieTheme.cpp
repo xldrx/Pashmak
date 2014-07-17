@@ -4,6 +4,8 @@
 #include "GaussianNoiseFilter.h"
 #include "OldieFilter.h"
 #include "SepiaFilter.h"
+#include "VideoFile.h"
+#include "StillPictureVideo.h"
 
 OldieTheme::OldieTheme()
 {
@@ -18,9 +20,16 @@ unsigned int OldieTheme::GetNumberOfCuts()
 	return 1;
 }
 
-std::shared_ptr<Media> OldieTheme::GenerateRandomCut(const std::vector<std::shared_ptr<Media>>& medias)
+std::shared_ptr<Video> OldieTheme::GenerateRandomCut(const std::vector<std::shared_ptr<Media>>& medias)
 {
-	return medias[0];
+	auto r = 0;
+	auto media = medias.at(r);
+
+	auto pic = std::dynamic_pointer_cast<Picture>(media);
+	if (pic)
+		return std::make_shared<StillPictureVideo>(pic, 24 * 5);
+	else
+		return std::static_pointer_cast<VideoFile>(media);
 }
 
 std::shared_ptr<Filter> OldieTheme::GetFilter()

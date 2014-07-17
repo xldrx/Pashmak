@@ -1,5 +1,5 @@
 #pragma once
-#include "Media.h"
+#include "Picture.h"
 #include <memory>
 
 class Filter
@@ -8,6 +8,9 @@ public:
 	Filter();
 	~Filter();
 
-	virtual std::shared_ptr<Media> Apply(const std::shared_ptr<Media>& media) = 0;
+	std::shared_ptr<Picture> Apply(const std::shared_ptr<Picture>& media);
+
+private:
+	virtual std::shared_ptr<Picture> ApplyImpl(const std::shared_ptr<Picture>& pic) = 0;
 };
 

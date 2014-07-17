@@ -10,6 +10,6 @@ public:
 	Engine();
 	~Engine();
 
-	std::shared_ptr<Media> CreateZoe(const std::vector<std::shared_ptr<Media>>& medias, Themes theme);
+	void CreateZoe(const std::vector<std::shared_ptr<Media>>& medias, Themes theme, const std::string& outputFilename);
 };
 

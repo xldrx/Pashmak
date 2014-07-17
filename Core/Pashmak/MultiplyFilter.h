@@ -1,5 +1,5 @@
 #pragma once
-#include "PictureFilter.h"
+#include "Filter.h"
 
 class MultiplyFilter :
 	public Filter
@@ -12,6 +12,7 @@ public:
 	MultiplyFilter(const std::shared_ptr<Filter>& multiplier, const std::shared_ptr<Filter>& multiplicand);
 	~MultiplyFilter();
 
-	std::shared_ptr<Media> Apply(const std::shared_ptr<Media>& pic) override;
+private:
+	std::shared_ptr<Picture> ApplyImpl(const std::shared_ptr<Picture>& pic) override;
 };
 
