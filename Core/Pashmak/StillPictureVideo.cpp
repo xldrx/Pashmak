@@ -13,7 +13,7 @@ StillPictureVideo::~StillPictureVideo()
 
 bool StillPictureVideo::GetNextFrame(std::shared_ptr<Picture>& frame)
 {
-	frame = myPic;
+	frame = std::make_shared<Picture>(myPic->Mat().clone());
 	return ++myCurrentFrame < myLength;
 }
 
