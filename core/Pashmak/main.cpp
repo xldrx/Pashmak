@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
 	double duration;
 	start = std::clock();
 
-	myEngine.CreateZoe(media, Themes::Cartoon, std::string(argv[2]));
+	myEngine.CreateZoe(media, Themes::Oldie, std::string(argv[2]));
 
 	duration = (std::clock() - start) / (double)CLOCKS_PER_SEC;
 	std::cout << "Time: " << duration << '\n';

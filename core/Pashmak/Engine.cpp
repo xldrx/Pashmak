@@ -22,6 +22,14 @@ void Engine::CreateZoe(const std::vector<std::shared_ptr<Media>>& medias, Themes
 		auto cut(theme->GenerateRandomCut(medias));
 		auto frame = std::make_shared<Picture>(cv::Mat());
 		while (cut->GetNextFrame(frame))
-			zoe.Write(filter->Apply(frame));
+		{
+			try
+			{
+				zoe.Write(filter->Apply(frame));
+			}
+			catch (...)
+			{
+			}
+		}
 	}
 }

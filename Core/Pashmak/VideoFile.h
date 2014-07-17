@@ -5,7 +5,7 @@ class VideoFile
 	: public Video
 {
 private:
-	cv::VideoCapture myVideoCapture;
+	std::shared_ptr<cv::VideoCapture> myVideoCapture;
 
 public:
 	VideoFile(const std::string& filename);

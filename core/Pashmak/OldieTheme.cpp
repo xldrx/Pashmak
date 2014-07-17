@@ -17,12 +17,13 @@ OldieTheme::~OldieTheme()
 
 unsigned int OldieTheme::GetNumberOfCuts()
 {
-	return 1;
+	return 3;
 }
 
 std::shared_ptr<Video> OldieTheme::GenerateRandomCut(const std::vector<std::shared_ptr<Media>>& medias)
 {
-	auto r = 0;
+	auto r = rand() % medias.size();
+	std::cerr << r << std::endl;
 	auto media = medias.at(r);
 
 	auto pic = std::dynamic_pointer_cast<Picture>(media);
