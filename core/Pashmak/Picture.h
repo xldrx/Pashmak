@@ -10,6 +10,7 @@ private:
 
 public:
 	Picture(const cv::Mat& mat);
+	Picture(const std::string& filename);
 	~Picture();
 
 	cv::Mat& Mat();

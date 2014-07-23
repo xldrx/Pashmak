@@ -17,12 +17,13 @@ CartoonTheme::~CartoonTheme()
 
 unsigned int CartoonTheme::GetNumberOfCuts()
 {
-	return 1;
+	return 3;
 }
 
 std::shared_ptr<Video> CartoonTheme::GenerateRandomCut(const std::vector<std::shared_ptr<Media>>& medias)
 {
-	auto r = 0;
+	auto r = rand() % medias.size();
+	std::cerr << r << std::endl;
 	auto media = medias.at(r);
 
 	auto pic = std::dynamic_pointer_cast<Picture>(media);
@@ -42,7 +43,7 @@ std::shared_ptr<Filter> CartoonTheme::GetFilter()
     
     std::vector<std::shared_ptr<Filter>> filters2 =
 	{
-        std::make_shared<MultiplyFilter>(std::make_shared<AggregatedFilter>(filters),std::make_shared<SobelEdgeFilter>()),
+        std::make_shared<MultiplyFilter>(std::make_shared<AggregatedFilter>(filters), std::make_shared<SobelEdgeFilter>()),
 		std::make_shared<BilateralBlurFilter>(15, 50.0, 50.0)
     };
     

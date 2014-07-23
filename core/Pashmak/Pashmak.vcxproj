@@ -86,6 +86,7 @@
     <ClCompile Include="BilateralBlurFilter.cpp" />
     <ClCompile Include="CartoonTheme.cpp" />
     <ClCompile Include="ColorReductionFilter.cpp" />
+    <ClCompile Include="Configuration.cpp" />
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="Filter.cpp" />
@@ -114,6 +115,7 @@
     <ClInclude Include="BilateralBlurFilter.h" />
     <ClInclude Include="CartoonTheme.h" />
     <ClInclude Include="ColorReductionFilter.h" />
+    <ClInclude Include="Configuration.h" />
     <ClInclude Include="Constants.h" />
     <ClInclude Include="Engine.h" />
     <ClInclude Include="FileManager.h" />

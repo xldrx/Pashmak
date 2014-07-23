@@ -1,4 +1,5 @@
 #include "VideoFile.h"
+#include "Configuration.h"
 
 VideoFile::VideoFile(const std::string& filename)
 	: myVideoCapture(std::make_shared<cv::VideoCapture>(filename))
@@ -16,6 +17,6 @@ bool VideoFile::GetNextFrame(std::shared_ptr<Picture>& frame)
 	if (!myVideoCapture->read(src))
 		return false;
 
-	resize(src, frame->Mat(), cv::Size(512, 512));
+	cv::resize(src, frame->Mat(), cv::Size(Configuration::GetOutputWidth(), Configuration::GetOutputHeight()));
 	return true;
 }

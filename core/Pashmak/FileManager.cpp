@@ -81,11 +81,6 @@ namespace
 	{
 		return GetFilenameExtension(filename) == "jpg";
 	}
-
-	std::shared_ptr<Picture> LoadPicture(const std::string& filename)
-	{
-		return std::make_shared<Picture>(cv::imread(filename));
-	}
 }
 
 FileManager::FileManager()
@@ -99,7 +94,7 @@ FileManager::~FileManager()
 std::shared_ptr<Media> FileManager::LoadFile(const std::string& filename) const
 {
 	if (IsPicture(filename))
-		return LoadPicture(filename);
+		return std::make_shared<Picture>(filename);
 	else
 		return std::make_shared<VideoFile>(filename);
 }
