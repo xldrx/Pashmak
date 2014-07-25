@@ -17,7 +17,7 @@ void Engine::CreateZoe(const std::vector<std::shared_ptr<Media>>& medias, Themes
 	auto theme = myThemeFactory.LoadTheme(themes);
 	auto filter = theme->GetFilter();
 
-	VideoWriter zoe(cv::VideoWriter(outputFilename, CV_FOURCC('W', 'M', 'V', '1'),
+	VideoWriter zoe(cv::VideoWriter(outputFilename, CV_FOURCC('L', 'M', '4', 'V'),
 		Configuration::GetOutputFps(), cv::Size(Configuration::GetOutputWidth(), Configuration::GetOutputHeight())));
 	for (unsigned int cutId = 0; cutId < theme->GetNumberOfCuts(); cutId++)
 	{
