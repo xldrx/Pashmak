@@ -58,7 +58,7 @@
     NSData *imageData = UIImageJPEGRepresentation(image, 1);
     [imageData writeToFile:path atomically:YES];
 
-    path = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], @"Lenna.jpg"];;
+//    path = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], @"Lenna.jpg"];;
     
     FileManager myFileManager;
 	Engine myEngine;
