@@ -57,6 +57,8 @@
     NSString *path = [NSTemporaryDirectory() stringByAppendingPathComponent:@"image.jpg"];
     NSData *imageData = UIImageJPEGRepresentation(image, 1);
     [imageData writeToFile:path atomically:YES];
+
+    path = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], @"Lenna.jpg"];;
     
     FileManager myFileManager;
 	Engine myEngine;
@@ -64,9 +66,10 @@
     auto cpath = {(std::string)[path UTF8String]};
     
 	auto media = myFileManager.LoadFiles(cpath);
-	auto output = myEngine.CreateZoe(media, Themes::Oldie);
-    NSString* savePath = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], @"output.jpg"];
-	myFileManager.SaveFile(output, [savePath UTF8String]);
+    NSString* savePath = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], @"output2.mp4"];
+	myEngine.CreateZoe(media, Themes::Oldie, [savePath UTF8String]);
+
+//	myFileManager.SaveFile(output, [savePath UTF8String]);
     
     UIImage* imageToBeSaved = [UIImage imageWithContentsOfFile:savePath];
     UIImageWriteToSavedPhotosAlbum(imageToBeSaved, nil, nil, nil);
