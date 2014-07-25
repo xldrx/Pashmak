@@ -106,7 +106,9 @@
     <ClCompile Include="StillPictureVideo.cpp" />
     <ClCompile Include="Theme.cpp" />
     <ClCompile Include="ThemeFactory.cpp" />
+    <ClCompile Include="Utils.cpp" />
     <ClCompile Include="Video.cpp" />
+    <ClCompile Include="VideoCut.cpp" />
     <ClCompile Include="VideoFile.cpp" />
     <ClCompile Include="VideoWriter.cpp" />
   </ItemGroup>
@@ -135,7 +137,9 @@
     <ClInclude Include="StillPictureVideo.h" />
     <ClInclude Include="Theme.h" />
     <ClInclude Include="ThemeFactory.h" />
+    <ClInclude Include="Utils.h" />
     <ClInclude Include="Video.h" />
+    <ClInclude Include="VideoCut.h" />
     <ClInclude Include="VideoFile.h" />
     <ClInclude Include="VideoWriter.h" />
   </ItemGroup>

@@ -1,15 +1,16 @@
 #pragma once
 #include "Video.h"
-
-class StillPictureVideo :
+class VideoCut :
 	public Video
 {
 private:
-	std::shared_ptr<Picture> myPic;
+	std::shared_ptr<Video> myVideo;
+	unsigned int myCurrentFrame;
+	unsigned int myLength;
 
 public:
-	StillPictureVideo(const std::shared_ptr<Picture>& pic);
-	~StillPictureVideo();
+	VideoCut(const std::shared_ptr<Video>& video, unsigned int length);
+	~VideoCut();
 
 	unsigned int GetLength() override;
 	void GotoFrame(unsigned int frame) override;

@@ -11,6 +11,8 @@ public:
 	VideoFile(const std::string& filename);
 	~VideoFile();
 
+	unsigned int GetLength() override;
+	void GotoFrame(unsigned int frame) override;
 	bool GetNextFrame(std::shared_ptr<Picture>& frame) override;
 };
 

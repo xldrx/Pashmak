@@ -4,8 +4,7 @@
 #include "BilateralBlurFilter.h"
 #include "MultiplyFilter.h"
 #include "SobelEdgeFilter.h"
-#include "VideoFile.h"
-#include "StillPictureVideo.h"
+#include "Utils.h"
 
 CartoonTheme::CartoonTheme()
 {
@@ -22,15 +21,7 @@ unsigned int CartoonTheme::GetNumberOfCuts()
 
 std::shared_ptr<Video> CartoonTheme::GenerateRandomCut(const std::vector<std::shared_ptr<Media>>& medias)
 {
-	auto r = rand() % medias.size();
-	std::cerr << r << std::endl;
-	auto media = medias.at(r);
-
-	auto pic = std::dynamic_pointer_cast<Picture>(media);
-	if (pic)
-		return std::make_shared<StillPictureVideo>(pic, 24 * 5);
-	else
-		return std::static_pointer_cast<VideoFile>(media);
+	return Utils::GetRandomVideoCut(medias, 1.0);
 }
 
 std::shared_ptr<Filter> CartoonTheme::GetFilter()

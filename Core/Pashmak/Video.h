@@ -10,6 +10,8 @@ public:
 	Video();
 	~Video();
 
+	virtual unsigned int GetLength() = 0;
+	virtual void GotoFrame(unsigned int frame) = 0;
 	virtual bool GetNextFrame(std::shared_ptr<Picture>& frame) = 0;
 };
 
