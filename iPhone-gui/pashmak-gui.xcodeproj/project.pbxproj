@@ -20,33 +20,51 @@
 		7619A3661974E994006429AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7619A3451974E993006429AF /* UIKit.framework */; };
 		7619A36E1974E994006429AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7619A36C1974E994006429AF /* InfoPlist.strings */; };
 		7619A3701974E994006429AF /* pashmak_guiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7619A36F1974E994006429AF /* pashmak_guiTests.m */; };
-		7619A3AA1974EAE1006429AF /* milad-ghaznavi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7619A37D1974EAE1006429AF /* milad-ghaznavi.jpg */; };
-		7619A3AB1974EAE1006429AF /* output.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7619A37E1974EAE1006429AF /* output.jpg */; };
-		7619A3AC1974EAE1006429AF /* AggregatedFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3801974EAE1006429AF /* AggregatedFilter.cpp */; };
-		7619A3AD1974EAE1006429AF /* Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3831974EAE1006429AF /* Engine.cpp */; };
-		7619A3AE1974EAE1006429AF /* FileManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3851974EAE1006429AF /* FileManager.cpp */; };
-		7619A3AF1974EAE1006429AF /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3871974EAE1006429AF /* Filter.cpp */; };
-		7619A3B01974EAE1006429AF /* GaussianNoiseFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3891974EAE1006429AF /* GaussianNoiseFilter.cpp */; };
-		7619A3B11974EAE1006429AF /* GaussianWindowFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A38B1974EAE1006429AF /* GaussianWindowFilter.cpp */; };
-		7619A3B21974EAE1006429AF /* GrayscaleFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A38D1974EAE1006429AF /* GrayscaleFilter.cpp */; };
-		7619A3B41974EAE1006429AF /* Media.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3901974EAE1006429AF /* Media.cpp */; };
-		7619A3B51974EAE1006429AF /* MediaManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3921974EAE1006429AF /* MediaManager.cpp */; };
-		7619A3B61974EAE1006429AF /* OldieFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3941974EAE1006429AF /* OldieFilter.cpp */; };
-		7619A3B71974EAE1006429AF /* OldieTheme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3961974EAE1006429AF /* OldieTheme.cpp */; };
-		7619A3B81974EAE1006429AF /* Pashmak.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = 7619A3981974EAE1006429AF /* Pashmak.vcxproj */; };
-		7619A3B91974EAE1006429AF /* Pashmak.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = 7619A3991974EAE1006429AF /* Pashmak.vcxproj.filters */; };
-		7619A3BA1974EAE1006429AF /* Picture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A39A1974EAE1006429AF /* Picture.cpp */; };
-		7619A3BB1974EAE1006429AF /* PictureFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A39C1974EAE1006429AF /* PictureFilter.cpp */; };
-		7619A3BC1974EAE1006429AF /* PosterizationFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A39E1974EAE1006429AF /* PosterizationFilter.cpp */; };
-		7619A3BD1974EAE1006429AF /* SepiaFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3A01974EAE1006429AF /* SepiaFilter.cpp */; };
-		7619A3BE1974EAE1006429AF /* Theme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3A21974EAE1006429AF /* Theme.cpp */; };
-		7619A3BF1974EAE1006429AF /* ThemeFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3A41974EAE1006429AF /* ThemeFactory.cpp */; };
-		7619A3C01974EAE1006429AF /* ThemeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3A61974EAE1006429AF /* ThemeManager.cpp */; };
-		7619A3C11974EAE1006429AF /* Pashmak.sln in Resources */ = {isa = PBXBuildFile; fileRef = 7619A3A81974EAE1006429AF /* Pashmak.sln */; };
-		7619A3C21974EAE1006429AF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7619A3A91974EAE1006429AF /* README.md */; };
 		7619A3C51974F02C006429AF /* xlMain.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7619A3C41974F02C006429AF /* xlMain.mm */; };
 		7619A3C71974F84F006429AF /* Lenna.png in Resources */ = {isa = PBXBuildFile; fileRef = 7619A3C61974F84F006429AF /* Lenna.png */; };
 		7619A3C91974FDD4006429AF /* Lenna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7619A3C81974FDD4006429AF /* Lenna.jpg */; };
+		76AE92BA19820DC800341655 /* filmscratches.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 76AE926D19820DC800341655 /* filmscratches.m4v */; };
+		76AE92BB19820DC800341655 /* _Three.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 76AE926F19820DC800341655 /* _Three.mp4 */; };
+		76AE92BC19820DC800341655 /* Blah.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 76AE927019820DC800341655 /* Blah.mp4 */; };
+		76AE92BD19820DC800341655 /* IMG_0541.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76AE927119820DC800341655 /* IMG_0541.jpg */; };
+		76AE92BE19820DC800341655 /* Lenna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76AE927219820DC800341655 /* Lenna.jpg */; };
+		76AE92BF19820DC800341655 /* SanDiego.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 76AE927319820DC800341655 /* SanDiego.mp4 */; };
+		76AE92C019820DC800341655 /* output.wmv in Resources */ = {isa = PBXBuildFile; fileRef = 76AE927419820DC800341655 /* output.wmv */; };
+		76AE92C119820DC800341655 /* AggregatedFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE927619820DC800341655 /* AggregatedFilter.cpp */; };
+		76AE92C219820DC800341655 /* BilateralBlurFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE927819820DC800341655 /* BilateralBlurFilter.cpp */; };
+		76AE92C319820DC800341655 /* CartoonTheme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE927A19820DC800341655 /* CartoonTheme.cpp */; };
+		76AE92C419820DC800341655 /* ColorReductionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE927C19820DC800341655 /* ColorReductionFilter.cpp */; };
+		76AE92C519820DC800341655 /* Configuration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE927E19820DC800341655 /* Configuration.cpp */; };
+		76AE92C619820DC800341655 /* Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE928119820DC800341655 /* Engine.cpp */; };
+		76AE92C719820DC800341655 /* FileManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE928319820DC800341655 /* FileManager.cpp */; };
+		76AE92C819820DC800341655 /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE928519820DC800341655 /* Filter.cpp */; };
+		76AE92C919820DC800341655 /* GaussianNoiseFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE928719820DC800341655 /* GaussianNoiseFilter.cpp */; };
+		76AE92CA19820DC800341655 /* GaussianWindowFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE928919820DC800341655 /* GaussianWindowFilter.cpp */; };
+		76AE92CB19820DC800341655 /* GrayscaleFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE928B19820DC800341655 /* GrayscaleFilter.cpp */; };
+		76AE92CD19820DC800341655 /* Media.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE928E19820DC800341655 /* Media.cpp */; };
+		76AE92CE19820DC800341655 /* MediaManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE929019820DC800341655 /* MediaManager.cpp */; };
+		76AE92CF19820DC800341655 /* MultiplyFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE929219820DC800341655 /* MultiplyFilter.cpp */; };
+		76AE92D019820DC800341655 /* NoOpFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE929419820DC800341655 /* NoOpFilter.cpp */; };
+		76AE92D119820DC800341655 /* OldieFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE929619820DC800341655 /* OldieFilter.cpp */; };
+		76AE92D219820DC800341655 /* OldieTheme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE929819820DC800341655 /* OldieTheme.cpp */; };
+		76AE92D319820DC800341655 /* Pashmak.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = 76AE929A19820DC800341655 /* Pashmak.vcxproj */; };
+		76AE92D419820DC800341655 /* Pashmak.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = 76AE929B19820DC800341655 /* Pashmak.vcxproj.filters */; };
+		76AE92D519820DC800341655 /* Picture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE929C19820DC800341655 /* Picture.cpp */; };
+		76AE92D619820DC800341655 /* PosterizationFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE929E19820DC800341655 /* PosterizationFilter.cpp */; };
+		76AE92D719820DC800341655 /* SepiaFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE92A019820DC800341655 /* SepiaFilter.cpp */; };
+		76AE92D819820DC800341655 /* SobelEdgeFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE92A219820DC800341655 /* SobelEdgeFilter.cpp */; };
+		76AE92D919820DC800341655 /* StillPictureVideo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE92A419820DC800341655 /* StillPictureVideo.cpp */; };
+		76AE92DA19820DC800341655 /* Theme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE92A619820DC800341655 /* Theme.cpp */; };
+		76AE92DB19820DC800341655 /* ThemeFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE92A819820DC800341655 /* ThemeFactory.cpp */; };
+		76AE92DC19820DC800341655 /* ThemeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE92AA19820DC800341655 /* ThemeManager.cpp */; };
+		76AE92DD19820DC800341655 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE92AC19820DC800341655 /* Utils.cpp */; };
+		76AE92DE19820DC800341655 /* Video.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE92AE19820DC800341655 /* Video.cpp */; };
+		76AE92DF19820DC800341655 /* VideoCut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE92B019820DC800341655 /* VideoCut.cpp */; };
+		76AE92E019820DC800341655 /* VideoFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE92B219820DC800341655 /* VideoFile.cpp */; };
+		76AE92E119820DC800341655 /* VideoFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE92B419820DC800341655 /* VideoFilter.cpp */; };
+		76AE92E219820DC800341655 /* VideoWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE92B619820DC800341655 /* VideoWriter.cpp */; };
+		76AE92E319820DC800341655 /* Pashmak.sln in Resources */ = {isa = PBXBuildFile; fileRef = 76AE92B819820DC800341655 /* Pashmak.sln */; };
+		76AE92E419820DC800341655 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 76AE92B919820DC800341655 /* README.md */; };
 		E475838FFC434E7FB33C800B /* libPods-pashmak-gui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EFD27D7DE44B95A6D6EA60 /* libPods-pashmak-gui.a */; };
 /* End PBXBuildFile section */
 
@@ -80,54 +98,85 @@
 		7619A36D1974E994006429AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7619A36F1974E994006429AF /* pashmak_guiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pashmak_guiTests.m; sourceTree = "<group>"; };
 		7619A3791974EAC7006429AF /* libPods-pashmak-gui-OpenCV.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-pashmak-gui-OpenCV.a"; path = "Pods/build/Debug-iphoneos/libPods-pashmak-gui-OpenCV.a"; sourceTree = "<group>"; };
-		7619A37D1974EAE1006429AF /* milad-ghaznavi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "milad-ghaznavi.jpg"; sourceTree = "<group>"; };
-		7619A37E1974EAE1006429AF /* output.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = output.jpg; sourceTree = "<group>"; };
-		7619A3801974EAE1006429AF /* AggregatedFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AggregatedFilter.cpp; sourceTree = "<group>"; };
-		7619A3811974EAE1006429AF /* AggregatedFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AggregatedFilter.h; sourceTree = "<group>"; };
-		7619A3821974EAE1006429AF /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		7619A3831974EAE1006429AF /* Engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Engine.cpp; sourceTree = "<group>"; };
-		7619A3841974EAE1006429AF /* Engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
-		7619A3851974EAE1006429AF /* FileManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileManager.cpp; sourceTree = "<group>"; };
-		7619A3861974EAE1006429AF /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
-		7619A3871974EAE1006429AF /* Filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Filter.cpp; sourceTree = "<group>"; };
-		7619A3881974EAE1006429AF /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
-		7619A3891974EAE1006429AF /* GaussianNoiseFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GaussianNoiseFilter.cpp; sourceTree = "<group>"; };
-		7619A38A1974EAE1006429AF /* GaussianNoiseFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaussianNoiseFilter.h; sourceTree = "<group>"; };
-		7619A38B1974EAE1006429AF /* GaussianWindowFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GaussianWindowFilter.cpp; sourceTree = "<group>"; };
-		7619A38C1974EAE1006429AF /* GaussianWindowFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaussianWindowFilter.h; sourceTree = "<group>"; };
-		7619A38D1974EAE1006429AF /* GrayscaleFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayscaleFilter.cpp; sourceTree = "<group>"; };
-		7619A38E1974EAE1006429AF /* GrayscaleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayscaleFilter.h; sourceTree = "<group>"; };
-		7619A38F1974EAE1006429AF /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		7619A3901974EAE1006429AF /* Media.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Media.cpp; sourceTree = "<group>"; };
-		7619A3911974EAE1006429AF /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
-		7619A3921974EAE1006429AF /* MediaManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MediaManager.cpp; sourceTree = "<group>"; };
-		7619A3931974EAE1006429AF /* MediaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaManager.h; sourceTree = "<group>"; };
-		7619A3941974EAE1006429AF /* OldieFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OldieFilter.cpp; sourceTree = "<group>"; };
-		7619A3951974EAE1006429AF /* OldieFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldieFilter.h; sourceTree = "<group>"; };
-		7619A3961974EAE1006429AF /* OldieTheme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OldieTheme.cpp; sourceTree = "<group>"; };
-		7619A3971974EAE1006429AF /* OldieTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldieTheme.h; sourceTree = "<group>"; };
-		7619A3981974EAE1006429AF /* Pashmak.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Pashmak.vcxproj; sourceTree = "<group>"; };
-		7619A3991974EAE1006429AF /* Pashmak.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Pashmak.vcxproj.filters; sourceTree = "<group>"; };
-		7619A39A1974EAE1006429AF /* Picture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Picture.cpp; sourceTree = "<group>"; };
-		7619A39B1974EAE1006429AF /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
-		7619A39C1974EAE1006429AF /* PictureFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PictureFilter.cpp; sourceTree = "<group>"; };
-		7619A39D1974EAE1006429AF /* PictureFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureFilter.h; sourceTree = "<group>"; };
-		7619A39E1974EAE1006429AF /* PosterizationFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PosterizationFilter.cpp; sourceTree = "<group>"; };
-		7619A39F1974EAE1006429AF /* PosterizationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterizationFilter.h; sourceTree = "<group>"; };
-		7619A3A01974EAE1006429AF /* SepiaFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SepiaFilter.cpp; sourceTree = "<group>"; };
-		7619A3A11974EAE1006429AF /* SepiaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SepiaFilter.h; sourceTree = "<group>"; };
-		7619A3A21974EAE1006429AF /* Theme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Theme.cpp; sourceTree = "<group>"; };
-		7619A3A31974EAE1006429AF /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
-		7619A3A41974EAE1006429AF /* ThemeFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThemeFactory.cpp; sourceTree = "<group>"; };
-		7619A3A51974EAE1006429AF /* ThemeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeFactory.h; sourceTree = "<group>"; };
-		7619A3A61974EAE1006429AF /* ThemeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThemeManager.cpp; sourceTree = "<group>"; };
-		7619A3A71974EAE1006429AF /* ThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
-		7619A3A81974EAE1006429AF /* Pashmak.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pashmak.sln; sourceTree = "<group>"; };
-		7619A3A91974EAE1006429AF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		7619A3C31974F02C006429AF /* xlMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlMain.h; sourceTree = "<group>"; };
 		7619A3C41974F02C006429AF /* xlMain.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = xlMain.mm; sourceTree = "<group>"; };
 		7619A3C61974F84F006429AF /* Lenna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lenna.png; sourceTree = "<group>"; };
 		7619A3C81974FDD4006429AF /* Lenna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lenna.jpg; sourceTree = "<group>"; };
+		76AE926D19820DC800341655 /* filmscratches.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = filmscratches.m4v; sourceTree = "<group>"; };
+		76AE926F19820DC800341655 /* _Three.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = _Three.mp4; sourceTree = "<group>"; };
+		76AE927019820DC800341655 /* Blah.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Blah.mp4; sourceTree = "<group>"; };
+		76AE927119820DC800341655 /* IMG_0541.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0541.jpg; sourceTree = "<group>"; };
+		76AE927219820DC800341655 /* Lenna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lenna.jpg; sourceTree = "<group>"; };
+		76AE927319820DC800341655 /* SanDiego.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanDiego.mp4; sourceTree = "<group>"; };
+		76AE927419820DC800341655 /* output.wmv */ = {isa = PBXFileReference; lastKnownFileType = file; path = output.wmv; sourceTree = "<group>"; };
+		76AE927619820DC800341655 /* AggregatedFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AggregatedFilter.cpp; sourceTree = "<group>"; };
+		76AE927719820DC800341655 /* AggregatedFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AggregatedFilter.h; sourceTree = "<group>"; };
+		76AE927819820DC800341655 /* BilateralBlurFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BilateralBlurFilter.cpp; sourceTree = "<group>"; };
+		76AE927919820DC800341655 /* BilateralBlurFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BilateralBlurFilter.h; sourceTree = "<group>"; };
+		76AE927A19820DC800341655 /* CartoonTheme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CartoonTheme.cpp; sourceTree = "<group>"; };
+		76AE927B19820DC800341655 /* CartoonTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartoonTheme.h; sourceTree = "<group>"; };
+		76AE927C19820DC800341655 /* ColorReductionFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorReductionFilter.cpp; sourceTree = "<group>"; };
+		76AE927D19820DC800341655 /* ColorReductionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorReductionFilter.h; sourceTree = "<group>"; };
+		76AE927E19820DC800341655 /* Configuration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Configuration.cpp; sourceTree = "<group>"; };
+		76AE927F19820DC800341655 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		76AE928019820DC800341655 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		76AE928119820DC800341655 /* Engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Engine.cpp; sourceTree = "<group>"; };
+		76AE928219820DC800341655 /* Engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
+		76AE928319820DC800341655 /* FileManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileManager.cpp; sourceTree = "<group>"; };
+		76AE928419820DC800341655 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		76AE928519820DC800341655 /* Filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Filter.cpp; sourceTree = "<group>"; };
+		76AE928619820DC800341655 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
+		76AE928719820DC800341655 /* GaussianNoiseFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GaussianNoiseFilter.cpp; sourceTree = "<group>"; };
+		76AE928819820DC800341655 /* GaussianNoiseFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaussianNoiseFilter.h; sourceTree = "<group>"; };
+		76AE928919820DC800341655 /* GaussianWindowFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GaussianWindowFilter.cpp; sourceTree = "<group>"; };
+		76AE928A19820DC800341655 /* GaussianWindowFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaussianWindowFilter.h; sourceTree = "<group>"; };
+		76AE928B19820DC800341655 /* GrayscaleFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayscaleFilter.cpp; sourceTree = "<group>"; };
+		76AE928C19820DC800341655 /* GrayscaleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayscaleFilter.h; sourceTree = "<group>"; };
+		76AE928D19820DC800341655 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		76AE928E19820DC800341655 /* Media.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Media.cpp; sourceTree = "<group>"; };
+		76AE928F19820DC800341655 /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
+		76AE929019820DC800341655 /* MediaManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MediaManager.cpp; sourceTree = "<group>"; };
+		76AE929119820DC800341655 /* MediaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaManager.h; sourceTree = "<group>"; };
+		76AE929219820DC800341655 /* MultiplyFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiplyFilter.cpp; sourceTree = "<group>"; };
+		76AE929319820DC800341655 /* MultiplyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiplyFilter.h; sourceTree = "<group>"; };
+		76AE929419820DC800341655 /* NoOpFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoOpFilter.cpp; sourceTree = "<group>"; };
+		76AE929519820DC800341655 /* NoOpFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoOpFilter.h; sourceTree = "<group>"; };
+		76AE929619820DC800341655 /* OldieFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OldieFilter.cpp; sourceTree = "<group>"; };
+		76AE929719820DC800341655 /* OldieFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldieFilter.h; sourceTree = "<group>"; };
+		76AE929819820DC800341655 /* OldieTheme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OldieTheme.cpp; sourceTree = "<group>"; };
+		76AE929919820DC800341655 /* OldieTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldieTheme.h; sourceTree = "<group>"; };
+		76AE929A19820DC800341655 /* Pashmak.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Pashmak.vcxproj; sourceTree = "<group>"; };
+		76AE929B19820DC800341655 /* Pashmak.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Pashmak.vcxproj.filters; sourceTree = "<group>"; };
+		76AE929C19820DC800341655 /* Picture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Picture.cpp; sourceTree = "<group>"; };
+		76AE929D19820DC800341655 /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
+		76AE929E19820DC800341655 /* PosterizationFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PosterizationFilter.cpp; sourceTree = "<group>"; };
+		76AE929F19820DC800341655 /* PosterizationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterizationFilter.h; sourceTree = "<group>"; };
+		76AE92A019820DC800341655 /* SepiaFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SepiaFilter.cpp; sourceTree = "<group>"; };
+		76AE92A119820DC800341655 /* SepiaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SepiaFilter.h; sourceTree = "<group>"; };
+		76AE92A219820DC800341655 /* SobelEdgeFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SobelEdgeFilter.cpp; sourceTree = "<group>"; };
+		76AE92A319820DC800341655 /* SobelEdgeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SobelEdgeFilter.h; sourceTree = "<group>"; };
+		76AE92A419820DC800341655 /* StillPictureVideo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StillPictureVideo.cpp; sourceTree = "<group>"; };
+		76AE92A519820DC800341655 /* StillPictureVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StillPictureVideo.h; sourceTree = "<group>"; };
+		76AE92A619820DC800341655 /* Theme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Theme.cpp; sourceTree = "<group>"; };
+		76AE92A719820DC800341655 /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
+		76AE92A819820DC800341655 /* ThemeFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThemeFactory.cpp; sourceTree = "<group>"; };
+		76AE92A919820DC800341655 /* ThemeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeFactory.h; sourceTree = "<group>"; };
+		76AE92AA19820DC800341655 /* ThemeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThemeManager.cpp; sourceTree = "<group>"; };
+		76AE92AB19820DC800341655 /* ThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
+		76AE92AC19820DC800341655 /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		76AE92AD19820DC800341655 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		76AE92AE19820DC800341655 /* Video.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Video.cpp; sourceTree = "<group>"; };
+		76AE92AF19820DC800341655 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		76AE92B019820DC800341655 /* VideoCut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VideoCut.cpp; sourceTree = "<group>"; };
+		76AE92B119820DC800341655 /* VideoCut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCut.h; sourceTree = "<group>"; };
+		76AE92B219820DC800341655 /* VideoFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VideoFile.cpp; sourceTree = "<group>"; };
+		76AE92B319820DC800341655 /* VideoFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoFile.h; sourceTree = "<group>"; };
+		76AE92B419820DC800341655 /* VideoFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VideoFilter.cpp; sourceTree = "<group>"; };
+		76AE92B519820DC800341655 /* VideoFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoFilter.h; sourceTree = "<group>"; };
+		76AE92B619820DC800341655 /* VideoWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VideoWriter.cpp; sourceTree = "<group>"; };
+		76AE92B719820DC800341655 /* VideoWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoWriter.h; sourceTree = "<group>"; };
+		76AE92B819820DC800341655 /* Pashmak.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pashmak.sln; sourceTree = "<group>"; };
+		76AE92B919820DC800341655 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		A5EFD27D7DE44B95A6D6EA60 /* libPods-pashmak-gui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pashmak-gui.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -159,9 +208,9 @@
 		7619A3351974E992006429AF = {
 			isa = PBXGroup;
 			children = (
+				76AE926B19820DC800341655 /* core */,
 				7619A3C81974FDD4006429AF /* Lenna.jpg */,
 				7619A3C61974F84F006429AF /* Lenna.png */,
-				7619A37B1974EAE1006429AF /* core */,
 				7619A3471974E993006429AF /* pashmak-gui */,
 				7619A3691974E994006429AF /* pashmak-guiTests */,
 				7619A3401974E993006429AF /* Frameworks */,
@@ -235,70 +284,109 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7619A37B1974EAE1006429AF /* core */ = {
+		76AE926B19820DC800341655 /* core */ = {
 			isa = PBXGroup;
 			children = (
-				7619A37C1974EAE1006429AF /* Images */,
-				7619A37E1974EAE1006429AF /* output.jpg */,
-				7619A37F1974EAE1006429AF /* Pashmak */,
-				7619A3A81974EAE1006429AF /* Pashmak.sln */,
-				7619A3A91974EAE1006429AF /* README.md */,
+				76AE926C19820DC800341655 /* Assets */,
+				76AE926E19820DC800341655 /* Images */,
+				76AE927419820DC800341655 /* output.wmv */,
+				76AE927519820DC800341655 /* Pashmak */,
+				76AE92B819820DC800341655 /* Pashmak.sln */,
+				76AE92B919820DC800341655 /* README.md */,
 			);
 			name = core;
 			path = ../core;
 			sourceTree = "<group>";
 		};
-		7619A37C1974EAE1006429AF /* Images */ = {
+		76AE926C19820DC800341655 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				7619A37D1974EAE1006429AF /* milad-ghaznavi.jpg */,
+				76AE926D19820DC800341655 /* filmscratches.m4v */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		76AE926E19820DC800341655 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				76AE926F19820DC800341655 /* _Three.mp4 */,
+				76AE927019820DC800341655 /* Blah.mp4 */,
+				76AE927119820DC800341655 /* IMG_0541.jpg */,
+				76AE927219820DC800341655 /* Lenna.jpg */,
+				76AE927319820DC800341655 /* SanDiego.mp4 */,
 			);
 			path = Images;
 			sourceTree = "<group>";
 		};
-		7619A37F1974EAE1006429AF /* Pashmak */ = {
+		76AE927519820DC800341655 /* Pashmak */ = {
 			isa = PBXGroup;
 			children = (
-				7619A3801974EAE1006429AF /* AggregatedFilter.cpp */,
-				7619A3811974EAE1006429AF /* AggregatedFilter.h */,
-				7619A3821974EAE1006429AF /* Constants.h */,
-				7619A3831974EAE1006429AF /* Engine.cpp */,
-				7619A3841974EAE1006429AF /* Engine.h */,
-				7619A3851974EAE1006429AF /* FileManager.cpp */,
-				7619A3861974EAE1006429AF /* FileManager.h */,
-				7619A3871974EAE1006429AF /* Filter.cpp */,
-				7619A3881974EAE1006429AF /* Filter.h */,
-				7619A3891974EAE1006429AF /* GaussianNoiseFilter.cpp */,
-				7619A38A1974EAE1006429AF /* GaussianNoiseFilter.h */,
-				7619A38B1974EAE1006429AF /* GaussianWindowFilter.cpp */,
-				7619A38C1974EAE1006429AF /* GaussianWindowFilter.h */,
-				7619A38D1974EAE1006429AF /* GrayscaleFilter.cpp */,
-				7619A38E1974EAE1006429AF /* GrayscaleFilter.h */,
-				7619A38F1974EAE1006429AF /* main.cpp */,
-				7619A3901974EAE1006429AF /* Media.cpp */,
-				7619A3911974EAE1006429AF /* Media.h */,
-				7619A3921974EAE1006429AF /* MediaManager.cpp */,
-				7619A3931974EAE1006429AF /* MediaManager.h */,
-				7619A3941974EAE1006429AF /* OldieFilter.cpp */,
-				7619A3951974EAE1006429AF /* OldieFilter.h */,
-				7619A3961974EAE1006429AF /* OldieTheme.cpp */,
-				7619A3971974EAE1006429AF /* OldieTheme.h */,
-				7619A3981974EAE1006429AF /* Pashmak.vcxproj */,
-				7619A3991974EAE1006429AF /* Pashmak.vcxproj.filters */,
-				7619A39A1974EAE1006429AF /* Picture.cpp */,
-				7619A39B1974EAE1006429AF /* Picture.h */,
-				7619A39C1974EAE1006429AF /* PictureFilter.cpp */,
-				7619A39D1974EAE1006429AF /* PictureFilter.h */,
-				7619A39E1974EAE1006429AF /* PosterizationFilter.cpp */,
-				7619A39F1974EAE1006429AF /* PosterizationFilter.h */,
-				7619A3A01974EAE1006429AF /* SepiaFilter.cpp */,
-				7619A3A11974EAE1006429AF /* SepiaFilter.h */,
-				7619A3A21974EAE1006429AF /* Theme.cpp */,
-				7619A3A31974EAE1006429AF /* Theme.h */,
-				7619A3A41974EAE1006429AF /* ThemeFactory.cpp */,
-				7619A3A51974EAE1006429AF /* ThemeFactory.h */,
-				7619A3A61974EAE1006429AF /* ThemeManager.cpp */,
-				7619A3A71974EAE1006429AF /* ThemeManager.h */,
+				76AE927619820DC800341655 /* AggregatedFilter.cpp */,
+				76AE927719820DC800341655 /* AggregatedFilter.h */,
+				76AE927819820DC800341655 /* BilateralBlurFilter.cpp */,
+				76AE927919820DC800341655 /* BilateralBlurFilter.h */,
+				76AE927A19820DC800341655 /* CartoonTheme.cpp */,
+				76AE927B19820DC800341655 /* CartoonTheme.h */,
+				76AE927C19820DC800341655 /* ColorReductionFilter.cpp */,
+				76AE927D19820DC800341655 /* ColorReductionFilter.h */,
+				76AE927E19820DC800341655 /* Configuration.cpp */,
+				76AE927F19820DC800341655 /* Configuration.h */,
+				76AE928019820DC800341655 /* Constants.h */,
+				76AE928119820DC800341655 /* Engine.cpp */,
+				76AE928219820DC800341655 /* Engine.h */,
+				76AE928319820DC800341655 /* FileManager.cpp */,
+				76AE928419820DC800341655 /* FileManager.h */,
+				76AE928519820DC800341655 /* Filter.cpp */,
+				76AE928619820DC800341655 /* Filter.h */,
+				76AE928719820DC800341655 /* GaussianNoiseFilter.cpp */,
+				76AE928819820DC800341655 /* GaussianNoiseFilter.h */,
+				76AE928919820DC800341655 /* GaussianWindowFilter.cpp */,
+				76AE928A19820DC800341655 /* GaussianWindowFilter.h */,
+				76AE928B19820DC800341655 /* GrayscaleFilter.cpp */,
+				76AE928C19820DC800341655 /* GrayscaleFilter.h */,
+				76AE928D19820DC800341655 /* main.cpp */,
+				76AE928E19820DC800341655 /* Media.cpp */,
+				76AE928F19820DC800341655 /* Media.h */,
+				76AE929019820DC800341655 /* MediaManager.cpp */,
+				76AE929119820DC800341655 /* MediaManager.h */,
+				76AE929219820DC800341655 /* MultiplyFilter.cpp */,
+				76AE929319820DC800341655 /* MultiplyFilter.h */,
+				76AE929419820DC800341655 /* NoOpFilter.cpp */,
+				76AE929519820DC800341655 /* NoOpFilter.h */,
+				76AE929619820DC800341655 /* OldieFilter.cpp */,
+				76AE929719820DC800341655 /* OldieFilter.h */,
+				76AE929819820DC800341655 /* OldieTheme.cpp */,
+				76AE929919820DC800341655 /* OldieTheme.h */,
+				76AE929A19820DC800341655 /* Pashmak.vcxproj */,
+				76AE929B19820DC800341655 /* Pashmak.vcxproj.filters */,
+				76AE929C19820DC800341655 /* Picture.cpp */,
+				76AE929D19820DC800341655 /* Picture.h */,
+				76AE929E19820DC800341655 /* PosterizationFilter.cpp */,
+				76AE929F19820DC800341655 /* PosterizationFilter.h */,
+				76AE92A019820DC800341655 /* SepiaFilter.cpp */,
+				76AE92A119820DC800341655 /* SepiaFilter.h */,
+				76AE92A219820DC800341655 /* SobelEdgeFilter.cpp */,
+				76AE92A319820DC800341655 /* SobelEdgeFilter.h */,
+				76AE92A419820DC800341655 /* StillPictureVideo.cpp */,
+				76AE92A519820DC800341655 /* StillPictureVideo.h */,
+				76AE92A619820DC800341655 /* Theme.cpp */,
+				76AE92A719820DC800341655 /* Theme.h */,
+				76AE92A819820DC800341655 /* ThemeFactory.cpp */,
+				76AE92A919820DC800341655 /* ThemeFactory.h */,
+				76AE92AA19820DC800341655 /* ThemeManager.cpp */,
+				76AE92AB19820DC800341655 /* ThemeManager.h */,
+				76AE92AC19820DC800341655 /* Utils.cpp */,
+				76AE92AD19820DC800341655 /* Utils.h */,
+				76AE92AE19820DC800341655 /* Video.cpp */,
+				76AE92AF19820DC800341655 /* Video.h */,
+				76AE92B019820DC800341655 /* VideoCut.cpp */,
+				76AE92B119820DC800341655 /* VideoCut.h */,
+				76AE92B219820DC800341655 /* VideoFile.cpp */,
+				76AE92B319820DC800341655 /* VideoFile.h */,
+				76AE92B419820DC800341655 /* VideoFilter.cpp */,
+				76AE92B519820DC800341655 /* VideoFilter.h */,
+				76AE92B619820DC800341655 /* VideoWriter.cpp */,
+				76AE92B719820DC800341655 /* VideoWriter.h */,
 			);
 			path = Pashmak;
 			sourceTree = "<group>";
@@ -382,17 +470,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76AE92BE19820DC800341655 /* Lenna.jpg in Resources */,
 				7619A3C71974F84F006429AF /* Lenna.png in Resources */,
-				7619A3B81974EAE1006429AF /* Pashmak.vcxproj in Resources */,
 				7619A35D1974E993006429AF /* Images.xcassets in Resources */,
-				7619A3AA1974EAE1006429AF /* milad-ghaznavi.jpg in Resources */,
-				7619A3C11974EAE1006429AF /* Pashmak.sln in Resources */,
+				76AE92C019820DC800341655 /* output.wmv in Resources */,
+				76AE92D319820DC800341655 /* Pashmak.vcxproj in Resources */,
 				7619A34C1974E993006429AF /* InfoPlist.strings in Resources */,
-				7619A3B91974EAE1006429AF /* Pashmak.vcxproj.filters in Resources */,
+				76AE92E419820DC800341655 /* README.md in Resources */,
 				7619A3C91974FDD4006429AF /* Lenna.jpg in Resources */,
-				7619A3C21974EAE1006429AF /* README.md in Resources */,
-				7619A3AB1974EAE1006429AF /* output.jpg in Resources */,
+				76AE92BD19820DC800341655 /* IMG_0541.jpg in Resources */,
+				76AE92BA19820DC800341655 /* filmscratches.m4v in Resources */,
+				76AE92BB19820DC800341655 /* _Three.mp4 in Resources */,
+				76AE92BC19820DC800341655 /* Blah.mp4 in Resources */,
+				76AE92D419820DC800341655 /* Pashmak.vcxproj.filters in Resources */,
+				76AE92E319820DC800341655 /* Pashmak.sln in Resources */,
 				7619A3551974E993006429AF /* Main.storyboard in Resources */,
+				76AE92BF19820DC800341655 /* SanDiego.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,27 +537,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76AE92DF19820DC800341655 /* VideoCut.cpp in Sources */,
+				76AE92D019820DC800341655 /* NoOpFilter.cpp in Sources */,
+				76AE92C319820DC800341655 /* CartoonTheme.cpp in Sources */,
+				76AE92CB19820DC800341655 /* GrayscaleFilter.cpp in Sources */,
+				76AE92C219820DC800341655 /* BilateralBlurFilter.cpp in Sources */,
+				76AE92D819820DC800341655 /* SobelEdgeFilter.cpp in Sources */,
+				76AE92C519820DC800341655 /* Configuration.cpp in Sources */,
+				76AE92C819820DC800341655 /* Filter.cpp in Sources */,
+				76AE92D519820DC800341655 /* Picture.cpp in Sources */,
+				76AE92C719820DC800341655 /* FileManager.cpp in Sources */,
+				76AE92E219820DC800341655 /* VideoWriter.cpp in Sources */,
 				7619A3521974E993006429AF /* xlAppDelegate.m in Sources */,
-				7619A3AF1974EAE1006429AF /* Filter.cpp in Sources */,
-				7619A3B11974EAE1006429AF /* GaussianWindowFilter.cpp in Sources */,
-				7619A3B61974EAE1006429AF /* OldieFilter.cpp in Sources */,
-				7619A3B01974EAE1006429AF /* GaussianNoiseFilter.cpp in Sources */,
-				7619A3AD1974EAE1006429AF /* Engine.cpp in Sources */,
-				7619A3BF1974EAE1006429AF /* ThemeFactory.cpp in Sources */,
+				76AE92CF19820DC800341655 /* MultiplyFilter.cpp in Sources */,
+				76AE92CA19820DC800341655 /* GaussianWindowFilter.cpp in Sources */,
+				76AE92E119820DC800341655 /* VideoFilter.cpp in Sources */,
+				76AE92DB19820DC800341655 /* ThemeFactory.cpp in Sources */,
+				76AE92DD19820DC800341655 /* Utils.cpp in Sources */,
+				76AE92CE19820DC800341655 /* MediaManager.cpp in Sources */,
+				76AE92D619820DC800341655 /* PosterizationFilter.cpp in Sources */,
+				76AE92E019820DC800341655 /* VideoFile.cpp in Sources */,
+				76AE92DC19820DC800341655 /* ThemeManager.cpp in Sources */,
+				76AE92C419820DC800341655 /* ColorReductionFilter.cpp in Sources */,
+				76AE92D219820DC800341655 /* OldieTheme.cpp in Sources */,
+				76AE92D719820DC800341655 /* SepiaFilter.cpp in Sources */,
+				76AE92CD19820DC800341655 /* Media.cpp in Sources */,
 				7619A34E1974E993006429AF /* main.m in Sources */,
-				7619A3BC1974EAE1006429AF /* PosterizationFilter.cpp in Sources */,
-				7619A3B41974EAE1006429AF /* Media.cpp in Sources */,
-				7619A3AE1974EAE1006429AF /* FileManager.cpp in Sources */,
-				7619A3BD1974EAE1006429AF /* SepiaFilter.cpp in Sources */,
-				7619A3AC1974EAE1006429AF /* AggregatedFilter.cpp in Sources */,
-				7619A3B21974EAE1006429AF /* GrayscaleFilter.cpp in Sources */,
-				7619A3BE1974EAE1006429AF /* Theme.cpp in Sources */,
-				7619A3B51974EAE1006429AF /* MediaManager.cpp in Sources */,
-				7619A3BB1974EAE1006429AF /* PictureFilter.cpp in Sources */,
-				7619A3BA1974EAE1006429AF /* Picture.cpp in Sources */,
-				7619A3C01974EAE1006429AF /* ThemeManager.cpp in Sources */,
+				76AE92C119820DC800341655 /* AggregatedFilter.cpp in Sources */,
+				76AE92C619820DC800341655 /* Engine.cpp in Sources */,
 				7619A3C51974F02C006429AF /* xlMain.mm in Sources */,
-				7619A3B71974EAE1006429AF /* OldieTheme.cpp in Sources */,
+				76AE92C919820DC800341655 /* GaussianNoiseFilter.cpp in Sources */,
+				76AE92DA19820DC800341655 /* Theme.cpp in Sources */,
+				76AE92D119820DC800341655 /* OldieFilter.cpp in Sources */,
+				76AE92DE19820DC800341655 /* Video.cpp in Sources */,
+				76AE92D919820DC800341655 /* StillPictureVideo.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,7 @@ std::shared_ptr<Picture> VideoFilter::ApplyImpl(const std::shared_ptr<Picture>& 
 		myVideo->GotoFrame(0);
 		if (!myVideo->GetNextFrame(frame))
 		{
-			throw std::exception("Something went wrong in VideoFilter");
+			throw std::runtime_error("Something went wrong in VideoFilter");
 		}
 	}
 

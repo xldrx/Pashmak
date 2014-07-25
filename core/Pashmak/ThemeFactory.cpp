@@ -20,7 +20,7 @@ std::shared_ptr<Theme> ThemeFactory::LoadTheme(Themes theme)
             return std::make_shared<CartoonTheme>();
 	
 	default:
-		throw std::exception("Unkown theme");
+		throw std::runtime_error("Unkown theme");
 		break;
 	}
 }
