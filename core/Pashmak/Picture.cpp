@@ -3,7 +3,7 @@
 
 Picture::Picture(const cv::Mat& mat)
 {
-	myMat = mat;
+	myMat = mat.clone();
 }
 
 Picture::Picture(const std::string& filename)

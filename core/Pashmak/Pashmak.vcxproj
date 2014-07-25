@@ -110,6 +110,7 @@
     <ClCompile Include="Video.cpp" />
     <ClCompile Include="VideoCut.cpp" />
     <ClCompile Include="VideoFile.cpp" />
+    <ClCompile Include="VideoFilter.cpp" />
     <ClCompile Include="VideoWriter.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -141,6 +142,7 @@
     <ClInclude Include="Video.h" />
     <ClInclude Include="VideoCut.h" />
     <ClInclude Include="VideoFile.h" />
+    <ClInclude Include="VideoFilter.h" />
     <ClInclude Include="VideoWriter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

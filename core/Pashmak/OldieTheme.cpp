@@ -4,6 +4,8 @@
 #include "GaussianNoiseFilter.h"
 #include "OldieFilter.h"
 #include "SepiaFilter.h"
+#include "VideoFilter.h"
+#include "VideoFile.h"
 #include "Utils.h"
 
 OldieTheme::OldieTheme()
@@ -32,6 +34,7 @@ std::shared_ptr<Filter> OldieTheme::GetFilter()
 		std::make_shared<GaussianNoiseFilter>(1, 5),
 		std::make_shared<OldieFilter>(10),
 		std::make_shared<SepiaFilter>()
+		//std::make_shared<VideoFilter>(std::make_shared<VideoFile>("C:\\Users\\Mohammad\\Documents\\visual studio 2013\\Projects\\Pashmak\\Core\\Assets\\filmscratches.m4v"))
 	};
 
 	return std::make_shared<AggregatedFilter>(filters);

@@ -5,7 +5,8 @@ VideoCut::VideoCut(const std::shared_ptr<Video>& video, unsigned int length)
 	, myLength(length)
 	, myCurrentFrame(0)
 {
-	auto r = rand() % (myVideo->GetLength() + 1);
+	auto movielength = myVideo->GetLength();
+	auto r = length > movielength ? 0 : rand() % (movielength + 1);
 	myVideo->GotoFrame(r);
 }
 
