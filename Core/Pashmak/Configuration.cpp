@@ -22,3 +22,8 @@ int Configuration::GetOutputFps()
 {
 	return 24;
 }
+
+int Configuration::GetOutputDuration()
+{
+	return 5;
+}

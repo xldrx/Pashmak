@@ -11,5 +11,8 @@ public:
 	unsigned int GetNumberOfCuts() override;
 	std::shared_ptr<Video> GenerateRandomCut(const std::vector<std::shared_ptr<Media>>& medias) override;
 	std::shared_ptr<Filter> GetFilter() override;
+
+	std::shared_ptr<Transition> GetTransition() override;
+	unsigned int GetTransitionLength() override;
 };
 

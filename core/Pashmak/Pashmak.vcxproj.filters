@@ -105,6 +105,15 @@
     <ClCompile Include="VideoFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Transition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FadingTransition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HardTransition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Constants.h">
@@ -195,6 +204,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="VideoFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Transition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FadingTransition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HardTransition.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
