@@ -27,7 +27,7 @@ int Configuration::GetOutputFps()
 
 int Configuration::GetOutputDuration()
 {
-	return 5;
+	return 10;
 }
 
 void Configuration::SetOverlayVideo(std::string addr){
