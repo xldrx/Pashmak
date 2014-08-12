@@ -2,6 +2,7 @@
 #include "AggregatedFilter.h"
 #include "ColorReductionFilter.h"
 #include "BilateralBlurFilter.h"
+#include "HardTransition.h"
 #include "MultiplyFilter.h"
 #include "SobelEdgeFilter.h"
 #include "Utils.h"
@@ -41,4 +42,13 @@ std::shared_ptr<Filter> CartoonTheme::GetFilter()
 	return std::make_shared<AggregatedFilter>(filters2);
 }
 
+std::shared_ptr<Transition> CartoonTheme::GetTransition()
+{
+	return std::make_shared<HardTransition>();
+}
+
+unsigned int CartoonTheme::GetTransitionLength()
+{
+	return 10;
+}
 

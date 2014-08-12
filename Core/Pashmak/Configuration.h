@@ -13,6 +13,6 @@ public:
     static int GetOutputWidth();
 	static int GetOutputHeight();
 	static int GetOutputFps();
-    
+	static int GetOutputDuration();
 };
 

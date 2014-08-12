@@ -1,5 +1,7 @@
 #include "OldieTheme.h"
 #include "AggregatedFilter.h"
+#include "Configuration.h"
+#include "FadingTransition.h"
 #include "GaussianWindowFilter.h"
 #include "GaussianNoiseFilter.h"
 #include "OldieFilter.h"
@@ -7,7 +9,6 @@
 #include "VideoFilter.h"
 #include "VideoFile.h"
 #include "Utils.h"
-#include "Configuration.h"
 
 OldieTheme::OldieTheme()
 {
@@ -19,12 +20,12 @@ OldieTheme::~OldieTheme()
 
 unsigned int OldieTheme::GetNumberOfCuts()
 {
-	return 30;
+	return 3;
 }
 
 std::shared_ptr<Video> OldieTheme::GenerateRandomCut(const std::vector<std::shared_ptr<Media>>& medias)
 {
-	return Utils::GetRandomVideoCut(medias, 1.0);
+	return Utils::GetRandomVideoCut(medias, 2.0);
 }
 
 std::shared_ptr<Filter> OldieTheme::GetFilter()
@@ -40,4 +41,14 @@ std::shared_ptr<Filter> OldieTheme::GetFilter()
 	};
     std::cerr << "xl:" << addr;
 	return std::make_shared<AggregatedFilter>(filters);
+}
+
+std::shared_ptr<Transition> OldieTheme::GetTransition()
+{
+	return std::make_shared<FadingTransition>();
+}
+
+unsigned int OldieTheme::GetTransitionLength()
+{
+	return Configuration::GetOutputFps();
 }
