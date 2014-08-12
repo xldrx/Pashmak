@@ -35,3 +35,8 @@ void Engine::CreateZoe(const std::vector<std::shared_ptr<Media>>& medias, Themes
 		}
 	}
 }
+
+void Engine::CreateZoe(const std::vector<std::shared_ptr<Media>>& medias, Themes theme, const std::string& outputFilename, const std::string& background){
+    Configuration::SetOverlayVideo(background);
+    this->CreateZoe(medias, theme, outputFilename);
+}

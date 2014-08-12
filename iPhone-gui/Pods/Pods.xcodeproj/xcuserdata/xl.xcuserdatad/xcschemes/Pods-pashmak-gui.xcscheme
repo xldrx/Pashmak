@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BA7534C6EC2C4C82A70F04A1"
+               BlueprintIdentifier = "ABE46FE49BA74143AB10DFA2"
                BuildableName = "libPods-pashmak-gui.a"
                BlueprintName = "Pods-pashmak-gui"
                ReferencedContainer = "container:Pods.xcodeproj">

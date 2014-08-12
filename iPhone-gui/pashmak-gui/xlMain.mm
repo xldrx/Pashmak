@@ -13,7 +13,7 @@
 #include "FileManager.h"
 #include <iostream>
 #include <string>
-
+#import <MobileCoreServices/UTCoreTypes.h>
 
 //#import "../../core/Pashmak/main.cpp"
 
@@ -31,56 +31,70 @@
 }
 
 - (void) imaging: (UIImagePickerControllerSourceType) source {
-    if (![UIImagePickerController isSourceTypeAvailable:source]){
-        
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You don't have any pictures (or camera)"
-                                                        message:@"Save some pictures."
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];
-        return;
-    }
-    
-    UIImagePickerController *pickerLibrary = [[UIImagePickerController alloc] init];
-    pickerLibrary.sourceType = source;
-    pickerLibrary.delegate = self;
-    
-    [self presentViewController:pickerLibrary animated:YES completion:nil];
+//    if (![UIImagePickerController isSourceTypeAvailable:source]){
+//        
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You don't have any pictures (or camera)"
+//                                                        message:@"Save some pictures."
+//                                                       delegate:nil
+//                                              cancelButtonTitle:@"OK"
+//                                              otherButtonTitles:nil];
+//        [alert show];
+//        return;
+//    }
+//    
+//    UIImagePickerController *pickerLibrary = [[UIImagePickerController alloc] init];
+//    pickerLibrary.sourceType = source;
+//    pickerLibrary.mediaTypes = [NSArray arrayWithObjects:(NSString*)kUTTypeImage, (NSString*)kUTTypeMovie, nil];
+//    pickerLibrary.delegate = self;
+//    pickerLibrary.videoQuality = UIImagePickerControllerQualityTypeHigh;
+//    
+//    [self presentViewController:pickerLibrary animated:YES completion:nil];
 
+    ELCImagePickerController *imagePicker = [[ELCImagePickerController alloc] init];
+    imagePicker.maximumImagesCount = 10; //Set the maximum number of images to select, defaults to 4
+    imagePicker.imagePickerDelegate = self;
+    [self presentViewController:imagePicker animated:YES completion:nil];
+
+    
+    
 }
 
-- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
+//- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
+    [picker dismissViewControllerAnimated:NO completion:nil];
 
-    [picker dismissViewControllerAnimated:YES completion:nil];
-    NSString *path = [NSTemporaryDirectory() stringByAppendingPathComponent:@"image.jpg"];
-    NSData *imageData = UIImageJPEGRepresentation(image, 1);
-    [imageData writeToFile:path atomically:YES];
-
-//    path = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], @"Lenna.jpg"];;
-    
+//    NSString *path = [NSTemporaryDirectory() stringByAppendingPathComponent:@"image.m4v"];
+//    NSData *imageData = UIImageJPEGRepresentation(image, 1);
+//    [imageData writeToFile:path atomically:YES];
+//
+    NSURL *videoPath = [info objectForKey:UIImagePickerControllerMediaURL];
     FileManager myFileManager;
 	Engine myEngine;
+    NSLog(@"URL is %@", videoPath);
     
-    auto cpath = {(std::string)[path UTF8String]};
-    
+    auto cpath = {(std::string)[[videoPath absoluteString] UTF8String]};
+
+
 	auto media = myFileManager.LoadFiles(cpath);
-    NSString* savePath = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], @"output2.mp4"];
+    NSString* savePath = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], @"output2.m4v"];
 	myEngine.CreateZoe(media, Themes::Oldie, [savePath UTF8String]);
-
-//	myFileManager.SaveFile(output, [savePath UTF8String]);
     
-    UIImage* imageToBeSaved = [UIImage imageWithContentsOfFile:savePath];
-    UIImageWriteToSavedPhotosAlbum(imageToBeSaved, nil, nil, nil);
+    UISaveVideoAtPathToSavedPhotosAlbum(savePath,nil,nil,nil);
     
-    [self.preview setImage:imageToBeSaved];
-    [self.preview setContentMode:UIViewContentModeScaleAspectFill];
-
+//    UIImage* imageToBeSaved = [UIImage imageWithContentsOfFile:savePath];
+//        UIImageWriteToSavedPhotosAlbum
+//    (imageToBeSaved, nil, nil, nil);
     
-    
+//    [self.preview setImage:imageToBeSaved];
+//    [self.preview setContentMode:UIViewContentModeScaleAspectFill];
 }
 
+- (void)elcImagePickerController:(ELCImagePickerController *)picker didFinishPickingMediaWithInfo:(NSArray *)info;
+{
+    NSLog(@"%@", [info count]);
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -113,5 +127,27 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)new_method:(id)sender {
+
+    NSString* savePath =  [NSTemporaryDirectory() stringByAppendingPathComponent:@"image.m4v"];
+
+    [[NSFileManager defaultManager] removeItemAtPath:savePath error:nil];
+
+    
+    
+    auto inputPath = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], @"b.m4v"];
+    
+    auto addr = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], @"filmscratches.m4v"];
+    
+    Engine myEngine;
+    FileManager myFileManager;
+
+    auto media = myFileManager.LoadFiles({[inputPath UTF8String]});
+    
+	myEngine.CreateZoe(media, Themes::Oldie, [savePath UTF8String], [addr UTF8String]);
+    NSLog(inputPath);
+    NSLog(addr);
+    NSLog(savePath);
+}
 
 @end

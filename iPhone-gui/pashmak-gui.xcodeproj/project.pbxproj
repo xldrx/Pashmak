@@ -65,6 +65,8 @@
 		76AE92E219820DC800341655 /* VideoWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE92B619820DC800341655 /* VideoWriter.cpp */; };
 		76AE92E319820DC800341655 /* Pashmak.sln in Resources */ = {isa = PBXBuildFile; fileRef = 76AE92B819820DC800341655 /* Pashmak.sln */; };
 		76AE92E419820DC800341655 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 76AE92B919820DC800341655 /* README.md */; };
+		76E0DE191999D69A00640150 /* a.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 76E0DE181999D69A00640150 /* a.m4v */; };
+		76E0DE1C1999EFA600640150 /* b.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 76E0DE1B1999EFA600640150 /* b.m4v */; };
 		E475838FFC434E7FB33C800B /* libPods-pashmak-gui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EFD27D7DE44B95A6D6EA60 /* libPods-pashmak-gui.a */; };
 /* End PBXBuildFile section */
 
@@ -102,7 +104,7 @@
 		7619A3C41974F02C006429AF /* xlMain.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = xlMain.mm; sourceTree = "<group>"; };
 		7619A3C61974F84F006429AF /* Lenna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lenna.png; sourceTree = "<group>"; };
 		7619A3C81974FDD4006429AF /* Lenna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lenna.jpg; sourceTree = "<group>"; };
-		76AE926D19820DC800341655 /* filmscratches.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = filmscratches.m4v; sourceTree = "<group>"; };
+		76AE926D19820DC800341655 /* filmscratches.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = filmscratches.m4v; path = ../core/Assets/filmscratches.m4v; sourceTree = "<group>"; };
 		76AE926F19820DC800341655 /* _Three.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = _Three.mp4; sourceTree = "<group>"; };
 		76AE927019820DC800341655 /* Blah.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Blah.mp4; sourceTree = "<group>"; };
 		76AE927119820DC800341655 /* IMG_0541.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0541.jpg; sourceTree = "<group>"; };
@@ -177,6 +179,8 @@
 		76AE92B719820DC800341655 /* VideoWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoWriter.h; sourceTree = "<group>"; };
 		76AE92B819820DC800341655 /* Pashmak.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pashmak.sln; sourceTree = "<group>"; };
 		76AE92B919820DC800341655 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		76E0DE181999D69A00640150 /* a.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.m4v; sourceTree = "<group>"; };
+		76E0DE1B1999EFA600640150 /* b.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = b.m4v; sourceTree = "<group>"; };
 		A5EFD27D7DE44B95A6D6EA60 /* libPods-pashmak-gui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pashmak-gui.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -208,6 +212,9 @@
 		7619A3351974E992006429AF = {
 			isa = PBXGroup;
 			children = (
+				76E0DE1B1999EFA600640150 /* b.m4v */,
+				76E0DE181999D69A00640150 /* a.m4v */,
+				76AE926D19820DC800341655 /* filmscratches.m4v */,
 				76AE926B19820DC800341655 /* core */,
 				7619A3C81974FDD4006429AF /* Lenna.jpg */,
 				7619A3C61974F84F006429AF /* Lenna.png */,
@@ -287,9 +294,9 @@
 		76AE926B19820DC800341655 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				76AE927419820DC800341655 /* output.wmv */,
 				76AE926C19820DC800341655 /* Assets */,
 				76AE926E19820DC800341655 /* Images */,
-				76AE927419820DC800341655 /* output.wmv */,
 				76AE927519820DC800341655 /* Pashmak */,
 				76AE92B819820DC800341655 /* Pashmak.sln */,
 				76AE92B919820DC800341655 /* README.md */,
@@ -301,7 +308,6 @@
 		76AE926C19820DC800341655 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				76AE926D19820DC800341655 /* filmscratches.m4v */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -479,6 +485,8 @@
 				76AE92E419820DC800341655 /* README.md in Resources */,
 				7619A3C91974FDD4006429AF /* Lenna.jpg in Resources */,
 				76AE92BD19820DC800341655 /* IMG_0541.jpg in Resources */,
+				76E0DE1C1999EFA600640150 /* b.m4v in Resources */,
+				76E0DE191999D69A00640150 /* a.m4v in Resources */,
 				76AE92BA19820DC800341655 /* filmscratches.m4v in Resources */,
 				76AE92BB19820DC800341655 /* _Three.mp4 in Resources */,
 				76AE92BC19820DC800341655 /* Blah.mp4 in Resources */,
@@ -697,6 +705,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Norman Ko (CD8J64T87T)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pashmak-gui/pashmak-gui-Prefix.pch";
 				INFOPLIST_FILE = "pashmak-gui/pashmak-gui-Info.plist";
@@ -716,6 +725,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Norman Ko (CD8J64T87T)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pashmak-gui/pashmak-gui-Prefix.pch";
 				INFOPLIST_FILE = "pashmak-gui/pashmak-gui-Info.plist";

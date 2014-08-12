@@ -29,8 +29,8 @@
                                     <action selector="click:" destination="Jxa-qR-73V" eventType="touchDown" id="J7L-U7-bXP"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YeM-ds-B4W">
-                                <rect key="frame" x="20" y="105" width="280" height="443"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YeM-ds-B4W">
+                                <rect key="frame" x="20" y="105" width="280" height="416"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="474" id="Wum-7i-qzE"/>
@@ -49,19 +49,37 @@
                                     <action selector="take_image:" destination="Jxa-qR-73V" eventType="touchDown" id="Stt-P4-h0d"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5V-xf-zjd">
+                                <rect key="frame" x="129" y="529" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="RLz-tl-Ohm"/>
+                                    <constraint firstAttribute="height" constant="30" id="Tal-MM-A3F"/>
+                                </constraints>
+                                <state key="normal" title="Constant">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="new_method:" destination="Jxa-qR-73V" eventType="touchUpInside" id="Asp-9h-JLl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="CZV-xM-aa2" secondAttribute="trailing" constant="20" id="C6D-im-XUj"/>
                             <constraint firstAttribute="trailing" secondItem="YeM-ds-B4W" secondAttribute="trailing" constant="20" id="Gj1-kn-Dat"/>
                             <constraint firstItem="YeM-ds-B4W" firstAttribute="leading" secondItem="JmW-MK-fSz" secondAttribute="leading" constant="20" id="KOf-ti-bRv"/>
+                            <constraint firstItem="u5V-xf-zjd" firstAttribute="leading" secondItem="JmW-MK-fSz" secondAttribute="leading" constant="129" id="WKl-Pa-s5z"/>
                             <constraint firstItem="YeM-ds-B4W" firstAttribute="top" secondItem="CZV-xM-aa2" secondAttribute="bottom" constant="20" id="Ypo-iN-y9e"/>
-                            <constraint firstItem="vSv-OR-c87" firstAttribute="top" secondItem="YeM-ds-B4W" secondAttribute="bottom" constant="20" id="bpI-W3-cho"/>
+                            <constraint firstItem="vSv-OR-c87" firstAttribute="top" secondItem="u5V-xf-zjd" secondAttribute="bottom" constant="9" id="aQq-Jc-aPY"/>
+                            <constraint firstItem="vSv-OR-c87" firstAttribute="top" secondItem="YeM-ds-B4W" secondAttribute="bottom" constant="40" id="bpI-W3-cho"/>
+                            <constraint firstItem="u5V-xf-zjd" firstAttribute="top" secondItem="YeM-ds-B4W" secondAttribute="bottom" constant="8" id="gUY-2e-L2u"/>
                             <constraint firstItem="TVj-Dx-yth" firstAttribute="leading" secondItem="JmW-MK-fSz" secondAttribute="leading" constant="20" id="iuE-Ql-h00"/>
                             <constraint firstItem="TVj-Dx-yth" firstAttribute="top" secondItem="hXe-Ba-6jI" secondAttribute="bottom" id="kdN-mM-rE3"/>
                             <constraint firstAttribute="trailing" secondItem="TVj-Dx-yth" secondAttribute="trailing" constant="20" id="lea-Lg-5XV"/>
                             <constraint firstItem="CZV-xM-aa2" firstAttribute="leading" secondItem="JmW-MK-fSz" secondAttribute="leading" constant="20" id="pqK-TU-3hb"/>
                             <constraint firstItem="CZV-xM-aa2" firstAttribute="top" secondItem="TVj-Dx-yth" secondAttribute="bottom" constant="5" id="tMb-b4-Grr"/>
+                            <constraint firstAttribute="trailing" secondItem="u5V-xf-zjd" secondAttribute="trailing" constant="128" id="wXM-6K-ofU"/>
                         </constraints>
                     </view>
                     <connections>

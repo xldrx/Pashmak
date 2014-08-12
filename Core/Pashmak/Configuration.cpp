@@ -8,6 +8,8 @@ Configuration::~Configuration()
 {
 }
 
+std::string Configuration::addr;
+
 int Configuration::GetOutputWidth()
 {
 	return 640;
@@ -21,4 +23,12 @@ int Configuration::GetOutputHeight()
 int Configuration::GetOutputFps()
 {
 	return 24;
+}
+
+void Configuration::SetOverlayVideo(std::string addr){
+    Configuration::addr = addr;
+}
+
+std::string Configuration::GetOverlayVideo(){
+    return Configuration::addr;
 }

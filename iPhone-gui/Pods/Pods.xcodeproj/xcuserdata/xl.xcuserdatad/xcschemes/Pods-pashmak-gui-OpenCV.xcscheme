@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "37CAE83A07664B19B548E302"
+               BlueprintIdentifier = "1DF6E0F186B4435B9363C626"
                BuildableName = "libPods-pashmak-gui-OpenCV.a"
                BlueprintName = "Pods-pashmak-gui-OpenCV"
                ReferencedContainer = "container:Pods.xcodeproj">

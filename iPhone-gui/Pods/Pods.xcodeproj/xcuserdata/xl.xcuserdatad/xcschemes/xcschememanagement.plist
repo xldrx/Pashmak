@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-pashmak-gui-ELCImagePickerController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-pashmak-gui-OpenCV.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>37CAE83A07664B19B548E302</key>
+		<key>1377586BE15D456DBB8D9EE0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6AAF83B80EBC443B9F52765B</key>
+		<key>1DF6E0F186B4435B9363C626</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BA7534C6EC2C4C82A70F04A1</key>
+		<key>ABE46FE49BA74143AB10DFA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C8074F6EBBF442D688F73ACE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ELCImagePickerController.h"
 
-@interface xlMain : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface xlMain : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, ELCImagePickerControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *preview;
 
