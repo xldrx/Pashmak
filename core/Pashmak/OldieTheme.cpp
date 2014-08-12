@@ -25,18 +25,18 @@ unsigned int OldieTheme::GetNumberOfCuts()
 
 std::shared_ptr<Video> OldieTheme::GenerateRandomCut(const std::vector<std::shared_ptr<Media>>& medias)
 {
-	return Utils::GetRandomVideoCut(medias, 3.0);
+	return Utils::GetRandomVideoCut(medias, 2.0);
 }
 
 std::shared_ptr<Filter> OldieTheme::GetFilter()
 {
 	std::vector<std::shared_ptr<Filter>> filters =
 	{
-		std::make_shared<GaussianWindowFilter>(),
-		std::make_shared<GaussianNoiseFilter>(1, 5),
-		std::make_shared<OldieFilter>(10),
-		std::make_shared<SepiaFilter>()
-		//std::make_shared<VideoFilter>(std::make_shared<VideoFile>("C:\\Users\\Mohammad\\Documents\\visual studio 2013\\Projects\\Pashmak\\Core\\Assets\\filmscratches.m4v"))
+		//std::make_shared<GaussianWindowFilter>(),
+		//std::make_shared<GaussianNoiseFilter>(1, 5),
+		//std::make_shared<OldieFilter>(10),
+		//std::make_shared<SepiaFilter>()
+		std::make_shared<VideoFilter>(std::make_shared<VideoFile>("C:\\Users\\Mohammad\\Documents\\visual studio 2013\\Projects\\Pashmak\\Core\\Assets\\filmscratches.m4v"))
 	};
 
 	return std::make_shared<AggregatedFilter>(filters);
