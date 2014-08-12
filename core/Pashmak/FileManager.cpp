@@ -13,6 +13,12 @@
 
 #endif
 
+#ifdef __APPLE__
+
+#include <dirent.h>
+#include <iostream>
+using namespace std;
+#endif
 namespace
 {
 	std::wstring s2ws(const std::string& str)
@@ -57,6 +63,34 @@ namespace
 		} while (FindNextFile(dir, &file_data));
 
 		FindClose(dir);
+#endif
+        
+#ifdef __APPLE__
+        DIR *pdir = NULL;
+        const char *FName = ws2s(foldername).c_str();
+        pdir = opendir (FName);
+        struct dirent *pent = NULL;
+        if (pdir == NULL)
+        { // print an error message and exit the program
+            cout << "\nERROR! pdir could not be initialised correctly";
+            exit (3);
+        } // end if
+        while ((pent = readdir (pdir)))
+        {
+            if (pent == NULL)
+            {
+                cout << "\nERROR! pent could not be initialised correctly";
+                exit (3);
+            }
+            string name = string(pent->d_name);            
+            if(name[0] != '.')
+            {
+                const std::wstring full_file_name = foldername + L"/" + s2ws(name);
+                out.push_back(full_file_name);
+            }
+        }
+        
+        closedir(pdir);
 #endif
 
 		return out;

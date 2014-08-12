@@ -65,6 +65,9 @@
 		76AE92E219820DC800341655 /* VideoWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE92B619820DC800341655 /* VideoWriter.cpp */; };
 		76AE92E319820DC800341655 /* Pashmak.sln in Resources */ = {isa = PBXBuildFile; fileRef = 76AE92B819820DC800341655 /* Pashmak.sln */; };
 		76AE92E419820DC800341655 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 76AE92B919820DC800341655 /* README.md */; };
+		C510A7701999DE2F003BEC9B /* FadingTransition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C510A76A1999DE2F003BEC9B /* FadingTransition.cpp */; };
+		C510A7711999DE2F003BEC9B /* HardTransition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C510A76C1999DE2F003BEC9B /* HardTransition.cpp */; };
+		C510A7721999DE2F003BEC9B /* Transition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C510A76E1999DE2F003BEC9B /* Transition.cpp */; };
 		E475838FFC434E7FB33C800B /* libPods-pashmak-gui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EFD27D7DE44B95A6D6EA60 /* libPods-pashmak-gui.a */; };
 /* End PBXBuildFile section */
 
@@ -178,6 +181,12 @@
 		76AE92B819820DC800341655 /* Pashmak.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pashmak.sln; sourceTree = "<group>"; };
 		76AE92B919820DC800341655 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		A5EFD27D7DE44B95A6D6EA60 /* libPods-pashmak-gui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pashmak-gui.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C510A76A1999DE2F003BEC9B /* FadingTransition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FadingTransition.cpp; sourceTree = "<group>"; };
+		C510A76B1999DE2F003BEC9B /* FadingTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FadingTransition.h; sourceTree = "<group>"; };
+		C510A76C1999DE2F003BEC9B /* HardTransition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HardTransition.cpp; sourceTree = "<group>"; };
+		C510A76D1999DE2F003BEC9B /* HardTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HardTransition.h; sourceTree = "<group>"; };
+		C510A76E1999DE2F003BEC9B /* Transition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Transition.cpp; sourceTree = "<group>"; };
+		C510A76F1999DE2F003BEC9B /* Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transition.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +330,12 @@
 		76AE927519820DC800341655 /* Pashmak */ = {
 			isa = PBXGroup;
 			children = (
+				C510A76A1999DE2F003BEC9B /* FadingTransition.cpp */,
+				C510A76B1999DE2F003BEC9B /* FadingTransition.h */,
+				C510A76C1999DE2F003BEC9B /* HardTransition.cpp */,
+				C510A76D1999DE2F003BEC9B /* HardTransition.h */,
+				C510A76E1999DE2F003BEC9B /* Transition.cpp */,
+				C510A76F1999DE2F003BEC9B /* Transition.h */,
 				76AE927619820DC800341655 /* AggregatedFilter.cpp */,
 				76AE927719820DC800341655 /* AggregatedFilter.h */,
 				76AE927819820DC800341655 /* BilateralBlurFilter.cpp */,
@@ -537,6 +552,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C510A7721999DE2F003BEC9B /* Transition.cpp in Sources */,
 				76AE92DF19820DC800341655 /* VideoCut.cpp in Sources */,
 				76AE92D019820DC800341655 /* NoOpFilter.cpp in Sources */,
 				76AE92C319820DC800341655 /* CartoonTheme.cpp in Sources */,
@@ -554,6 +570,7 @@
 				76AE92E119820DC800341655 /* VideoFilter.cpp in Sources */,
 				76AE92DB19820DC800341655 /* ThemeFactory.cpp in Sources */,
 				76AE92DD19820DC800341655 /* Utils.cpp in Sources */,
+				C510A7711999DE2F003BEC9B /* HardTransition.cpp in Sources */,
 				76AE92CE19820DC800341655 /* MediaManager.cpp in Sources */,
 				76AE92D619820DC800341655 /* PosterizationFilter.cpp in Sources */,
 				76AE92E019820DC800341655 /* VideoFile.cpp in Sources */,
@@ -566,6 +583,7 @@
 				76AE92C119820DC800341655 /* AggregatedFilter.cpp in Sources */,
 				76AE92C619820DC800341655 /* Engine.cpp in Sources */,
 				7619A3C51974F02C006429AF /* xlMain.mm in Sources */,
+				C510A7701999DE2F003BEC9B /* FadingTransition.cpp in Sources */,
 				76AE92C919820DC800341655 /* GaussianNoiseFilter.cpp in Sources */,
 				76AE92DA19820DC800341655 /* Theme.cpp in Sources */,
 				76AE92D119820DC800341655 /* OldieFilter.cpp in Sources */,
